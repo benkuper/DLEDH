@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: b8a8fe6cb5eddd44995213b22e5c5c3a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279317
+  packageName: '[HDRP] Day/Night Cycle'
+  packageVersion: 2.0
+  assetPath: Assets/TwistedImage/DayNightCycle/Script/DayAndNightCycle.cs
+  uploadId: 705056

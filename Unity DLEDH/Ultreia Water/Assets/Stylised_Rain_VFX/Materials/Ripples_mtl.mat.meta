@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7e4ed265e5cf8c947be109e5439dc9e1
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296524
+  packageName: Stylized Rain VFX
+  packageVersion: 1.0
+  assetPath: Assets/Stylised_Rain_VFX/Materials/Ripples_mtl.mat
+  uploadId: 693339

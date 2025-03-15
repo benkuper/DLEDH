@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cba1ef02c095d144299e0f718d8c3596
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279317
+  packageName: '[HDRP] Day/Night Cycle'
+  packageVersion: 2.0
+  assetPath: Assets/TwistedImage/DayNightCycle/Prefab/DayNightCycle.prefab
+  uploadId: 705056
