@@ -394,7 +394,7 @@ MonoBehaviour:
   volumeDepth: 50
   volumeHeight: 0
   volumePrority: 0
-  absorptionDistanceMultiplier: 1
+  absorptionDistanceMultiplier: 9.26
   underWaterAmbientProbeContribution: 1
   underWaterScatteringColorMode: 0
   underWaterScatteringColor: {r: 0, g: 0.27, b: 0.23, a: 1}
@@ -581,7 +581,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: 3924eae1e8b4a224c95835c5deb6accc, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 0
@@ -759,9 +759,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spoutName: Unity Ocean Wall
   _keepAlpha: 0
-  _captureMethod: 1
+  _captureMethod: 2
   _sourceCamera: {fileID: 1823688466}
-  _sourceTexture: {fileID: 0}
+  _sourceTexture: {fileID: 8400000, guid: 3924eae1e8b4a224c95835c5deb6accc, type: 2}
   _resources: {fileID: 11400000, guid: f449ebbe2051c2e4d993eaa773a410de, type: 2}
 --- !u!1 &2013410473
 GameObject:
