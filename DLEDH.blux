@@ -109,26 +109,26 @@
             },
             {
               "type": 1,
-              "width": 982,
+              "width": 885,
               "height": 989,
               "direction": 2,
               "shifters": [
                 {
                   "type": 1,
-                  "width": 982,
+                  "width": 885,
                   "height": 636,
                   "direction": 1,
                   "shifters": [
                     {
                       "type": 1,
-                      "width": 595,
+                      "width": 495,
                       "height": 636,
                       "direction": 2,
                       "shifters": [
                         {
                           "type": 0,
-                          "width": 595,
-                          "height": 576,
+                          "width": 495,
+                          "height": 580,
                           "currentContent": "Objects Grid View",
                           "tabs": [
                             {
@@ -141,8 +141,8 @@
                         },
                         {
                           "type": 0,
-                          "width": 595,
-                          "height": 54,
+                          "width": 495,
+                          "height": 50,
                           "currentContent": "Effect Chain Viz",
                           "tabs": [
                             {
@@ -154,7 +154,7 @@
                     },
                     {
                       "type": 0,
-                      "width": 381,
+                      "width": 384,
                       "height": 636,
                       "currentContent": "Scenes",
                       "tabs": [
@@ -167,7 +167,7 @@
                 },
                 {
                   "type": 0,
-                  "width": 982,
+                  "width": 885,
                   "height": 347,
                   "currentContent": "Sequence Editor",
                   "tabs": [
@@ -180,13 +180,13 @@
             },
             {
               "type": 1,
-              "width": 629,
+              "width": 726,
               "height": 989,
               "direction": 2,
               "shifters": [
                 {
                   "type": 0,
-                  "width": 629,
+                  "width": 726,
                   "height": 770,
                   "currentContent": "Inspector",
                   "tabs": [
@@ -197,7 +197,7 @@
                 },
                 {
                   "type": 0,
-                  "width": 629,
+                  "width": 726,
                   "height": 213,
                   "currentContent": "Logger",
                   "tabs": [
@@ -6850,7 +6850,7 @@
               "output": {
                 "parameters": [
                   {
-                    "value": "192.168.0.100",
+                    "value": "192.168.0.103",
                     "controlAddress": "/remoteHost"
                   }
                 ],
@@ -7935,7 +7935,7 @@
       {
         "parameters": [
           {
-            "value": 10.0,
+            "value": 14.999998092651367,
             "controlAddress": "/loadTime"
           }
         ],
@@ -10582,10 +10582,13 @@
                     }
                   },
                   "filters": {
-                    "editorIsCollapsed": true,
                     "items": [
                       {
                         "parameters": [
+                          {
+                            "value": true,
+                            "controlAddress": "/enabled"
+                          },
                           {
                             "value": "Use local",
                             "controlAddress": "/idMode"
@@ -11108,7 +11111,7 @@
       {
         "parameters": [
           {
-            "value": 5.300000190734863,
+            "value": 3.399999856948853,
             "controlAddress": "/loadTime"
           }
         ],
@@ -11888,11 +11891,11 @@
       {
         "parameters": [
           {
-            "value": 0.0,
+            "value": 0.300000011920929,
             "controlAddress": "/loadTime"
           }
         ],
-        "niceName": "1.3 - Black",
+        "niceName": "1.3 - Full White",
         "containers": {
           "loadingCurve": {
             "parameters": [
@@ -12050,9 +12053,9 @@
                             "parameters": [
                               {
                                 "value": [
-                                  0.0,
-                                  0.0,
-                                  0.0,
+                                  1.0,
+                                  1.0,
+                                  1.0,
                                   1.0
                                 ],
                                 "controlAddress": "/sourceColor"
@@ -12084,9 +12087,9 @@
                       "parameters": [
                         {
                           "value": [
-                            0.0,
-                            0.0,
-                            0.0,
+                            1.0,
+                            1.0,
+                            1.0,
                             1.0
                           ],
                           "controlAddress": "/sourceColor"
@@ -12561,7 +12564,7 @@
       {
         "parameters": [
           {
-            "value": 4.699998378753662,
+            "value": 2.099997997283936,
             "controlAddress": "/loadTime"
           }
         ],
@@ -15120,7 +15123,7 @@
       {
         "parameters": [
           {
-            "value": 0.300000011920929,
+            "value": 2.999999523162842,
             "controlAddress": "/loadTime"
           }
         ],
@@ -16312,11 +16315,11 @@
       {
         "parameters": [
           {
-            "value": 2.29995584487915,
+            "value": 12.299964904785156,
             "controlAddress": "/loadTime"
           }
         ],
-        "niceName": "1.7 - Dégradation 1",
+        "niceName": "1.9 - Nuit",
         "containers": {
           "loadingCurve": {
             "parameters": [
@@ -16409,12 +16412,6 @@
             "viewZoom": 1.0
           },
           "effects": {
-            "parameters": [
-              {
-                "value": false,
-                "controlAddress": "/includeWeightInScenes"
-              }
-            ],
             "items": [
               {
                 "parameters": [
@@ -16435,66 +16432,50 @@
                 "containers": {
                   "effectParameters": {
                     "containers": {
-                      "point": {
-                        "niceName": "Point",
+                      "noise": {
+                        "niceName": "Noise",
                         "containers": {
                           "parameters": {
                             "parameters": [
                               {
-                                "value": 1.0,
-                                "controlAddress": "/brightness"
+                                "value": 0.300000011920929,
+                                "controlAddress": "/speed"
                               },
                               {
-                                "value": [
-                                  1.0,
-                                  0.0,
-                                  0.0,
-                                  1.0
-                                ],
-                                "controlAddress": "/pointColor"
+                                "value": 1.00000011920929,
+                                "controlAddress": "/timeOffsetByID"
                               },
                               {
-                                "value": [
-                                  0.0,
-                                  0.0,
-                                  0.0,
-                                  1.0
-                                ],
-                                "controlAddress": "/backgroundColor"
-                              },
-                              {
-                                "value": 4.500035285949707,
-                                "controlAddress": "/position"
-                              },
-                              {
-                                "value": 0.600003242492676,
-                                "controlAddress": "/size"
-                              },
-                              {
-                                "value": 0.281653761863708,
-                                "controlAddress": "/fade"
-                              },
-                              {
-                                "value": 19,
-                                "hexMode": false,
-                                "controlAddress": "/numProps"
-                              },
-                              {
-                                "value": false,
-                                "controlAddress": "/invertOdds"
+                                "value": -0.310559034347534,
+                                "controlAddress": "/balance"
                               }
                             ],
                             "paramLinks": {
                             }
                           }
                         },
-                        "type": "Point"
+                        "type": "Noise"
                       }
                     },
                     "paramLinks": {
                     }
                   },
                   "filters": {
+                    "items": [
+                      {
+                        "parameters": [
+                          {
+                            "value": "Use local",
+                            "controlAddress": "/idMode"
+                          }
+                        ],
+                        "niceName": "Filter by Group",
+                        "type": "Filter by Group",
+                        "groups": [
+                          "/acte1_MainGroup"
+                        ]
+                      }
+                    ],
                     "viewOffset": [
                       0,
                       0
@@ -16504,59 +16485,28 @@
                 },
                 "type": "Override (Color)",
                 "colorSource": {
-                  "niceName": "Point",
+                  "niceName": "Noise",
                   "containers": {
                     "parameters": {
                       "parameters": [
                         {
-                          "value": 1.0,
-                          "controlAddress": "/brightness"
+                          "value": 0.300000011920929,
+                          "controlAddress": "/speed"
                         },
                         {
-                          "value": [
-                            1.0,
-                            0.0,
-                            0.0,
-                            1.0
-                          ],
-                          "controlAddress": "/pointColor"
+                          "value": 1.00000011920929,
+                          "controlAddress": "/timeOffsetByID"
                         },
                         {
-                          "value": [
-                            0.0,
-                            0.0,
-                            0.0,
-                            1.0
-                          ],
-                          "controlAddress": "/backgroundColor"
-                        },
-                        {
-                          "value": 4.500035285949707,
-                          "controlAddress": "/position"
-                        },
-                        {
-                          "value": 0.600003242492676,
-                          "controlAddress": "/size"
-                        },
-                        {
-                          "value": 0.281653761863708,
-                          "controlAddress": "/fade"
-                        },
-                        {
-                          "value": 19,
-                          "hexMode": false,
-                          "controlAddress": "/numProps"
-                        },
-                        {
-                          "value": false,
-                          "controlAddress": "/invertOdds"
+                          "value": -0.310559034347534,
+                          "controlAddress": "/balance"
                         }
                       ],
                       "paramLinks": {
                       }
                     }
                   },
-                  "type": "Point"
+                  "type": "Noise"
                 }
               }
             ],
@@ -16968,7 +16918,657 @@
             "cube20": {
               "components": {
                 "dimmer": {
-                  "/value": 0.0
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            }
+          },
+          "groups": {
+            "island": {
+              "effects": {
+              }
+            },
+            "islandExterior": {
+              "effects": {
+              }
+            },
+            "acte1_MainGroup": {
+              "effects": {
+              }
+            }
+          },
+          "globalEffects": {
+            "effectGroup": {
+              "effects": {
+                "masterDimmer": {
+                  "/weight": 1.0
+                }
+              }
+            },
+            "stomp": {
+              "effects": {
+                "override_Color_": {
+                  "/weight": 0.0
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "parameters": [
+          {
+            "value": 8.899966239929199,
+            "controlAddress": "/loadTime"
+          }
+        ],
+        "niceName": "1.10 Assault",
+        "containers": {
+          "loadingCurve": {
+            "parameters": [
+              {
+                "value": 1.0,
+                "controlAddress": "/length"
+              },
+              {
+                "value": [
+                  0.0,
+                  1.0
+                ],
+                "controlAddress": "/viewValueRange"
+              },
+              {
+                "value": [
+                  0.0,
+                  1.0
+                ],
+                "controlAddress": "/range",
+                "enabled": true
+              }
+            ],
+            "hideInRemoteControl": false,
+            "items": [
+              {
+                "parameters": [
+                  {
+                    "value": "Bezier",
+                    "controlAddress": "/easingType"
+                  }
+                ],
+                "niceName": "Key",
+                "containers": {
+                  "easing": {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.300000011920929,
+                          0.0
+                        ],
+                        "controlAddress": "/anchor1"
+                      },
+                      {
+                        "value": [
+                          -0.300000011920929,
+                          0.0
+                        ],
+                        "controlAddress": "/anchor2"
+                      }
+                    ]
+                  }
+                },
+                "type": "Key"
+              },
+              {
+                "parameters": [
+                  {
+                    "value": 1.0,
+                    "controlAddress": "/position"
+                  },
+                  {
+                    "value": 1.0,
+                    "controlAddress": "/value"
+                  },
+                  {
+                    "value": "Bezier",
+                    "controlAddress": "/easingType"
+                  }
+                ],
+                "niceName": "Key 1",
+                "containers": {
+                  "easing": {
+                  }
+                },
+                "type": "Key"
+              }
+            ],
+            "viewOffset": [
+              0,
+              0
+            ],
+            "viewZoom": 1.0
+          },
+          "sequences": {
+            "viewOffset": [
+              0,
+              0
+            ],
+            "viewZoom": 1.0
+          },
+          "effects": {
+            "items": [
+              {
+                "parameters": [
+                  {
+                    "value": true,
+                    "controlAddress": "/enabled"
+                  },
+                  {
+                    "value": "Save weight only",
+                    "controlAddress": "/saveMode"
+                  },
+                  {
+                    "value": "",
+                    "controlAddress": "/tag"
+                  }
+                ],
+                "niceName": "Smooth Water Noise",
+                "containers": {
+                  "effectParameters": {
+                    "containers": {
+                      "solidColor": {
+                        "niceName": "Solid Color",
+                        "containers": {
+                          "parameters": {
+                            "parameters": [
+                              {
+                                "value": [
+                                  1.0,
+                                  1.0,
+                                  1.0,
+                                  1.0
+                                ],
+                                "controlAddress": "/sourceColor"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        },
+                        "type": "Solid Color"
+                      }
+                    },
+                    "paramLinks": {
+                    }
+                  },
+                  "filters": {
+                    "items": [
+                      {
+                        "parameters": [
+                          {
+                            "value": "Use local",
+                            "controlAddress": "/idMode"
+                          }
+                        ],
+                        "niceName": "Filter by Group",
+                        "type": "Filter by Group",
+                        "groups": [
+                          "/acte1_MainGroup"
+                        ]
+                      }
+                    ],
+                    "viewOffset": [
+                      0,
+                      0
+                    ],
+                    "viewZoom": 1.0
+                  }
+                },
+                "type": "Override (Color)",
+                "colorSource": {
+                  "niceName": "Solid Color",
+                  "containers": {
+                    "parameters": {
+                      "parameters": [
+                        {
+                          "value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                          ],
+                          "controlAddress": "/sourceColor"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  "type": "Solid Color"
+                }
+              }
+            ],
+            "viewOffset": [
+              0,
+              0
+            ],
+            "viewZoom": 1.0
+          },
+          "actionsOnLoad": {
+            "editorIsCollapsed": true,
+            "viewOffset": [
+              0,
+              0
+            ],
+            "viewZoom": 1.0
+          },
+          "actionsOnExit": {
+            "viewOffset": [
+              0,
+              0
+            ],
+            "viewZoom": 1.0
+          }
+        },
+        "type": "Scene",
+        "sceneData": {
+          "objects": {
+            "cube1": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube2": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube3": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube4": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube5": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube6": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube7": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube8": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube9": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube10": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube11": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube12": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube13": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube14": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube15": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube16": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube17": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube18": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube19": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube20": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
                 },
                 "color": {
                   "/solidColor/parameters/speed": 0.0,
@@ -17563,7 +18163,7 @@
       {
         "parameters": [
           {
-            "value": 14.900001525878906,
+            "value": 0.0,
             "controlAddress": "/loadTime"
           }
         ],
@@ -18759,635 +19359,6 @@
         }
       },
       {
-        "parameters": [
-          {
-            "value": 11.399999618530273,
-            "controlAddress": "/loadTime"
-          }
-        ],
-        "niceName": "2.2 Submarine",
-        "containers": {
-          "loadingCurve": {
-            "parameters": [
-              {
-                "value": 1.0,
-                "controlAddress": "/length"
-              },
-              {
-                "value": [
-                  0.0,
-                  1.0
-                ],
-                "controlAddress": "/viewValueRange"
-              },
-              {
-                "value": [
-                  0.0,
-                  1.0
-                ],
-                "controlAddress": "/range",
-                "enabled": true
-              }
-            ],
-            "hideInRemoteControl": false,
-            "items": [
-              {
-                "parameters": [
-                  {
-                    "value": "Bezier",
-                    "controlAddress": "/easingType"
-                  }
-                ],
-                "niceName": "Key",
-                "containers": {
-                  "easing": {
-                    "parameters": [
-                      {
-                        "value": [
-                          0.300000011920929,
-                          0.0
-                        ],
-                        "controlAddress": "/anchor1"
-                      },
-                      {
-                        "value": [
-                          -0.300000011920929,
-                          0.0
-                        ],
-                        "controlAddress": "/anchor2"
-                      }
-                    ]
-                  }
-                },
-                "type": "Key"
-              },
-              {
-                "parameters": [
-                  {
-                    "value": 1.0,
-                    "controlAddress": "/position"
-                  },
-                  {
-                    "value": 1.0,
-                    "controlAddress": "/value"
-                  },
-                  {
-                    "value": "Bezier",
-                    "controlAddress": "/easingType"
-                  }
-                ],
-                "niceName": "Key 1",
-                "containers": {
-                  "easing": {
-                  }
-                },
-                "type": "Key"
-              }
-            ],
-            "viewOffset": [
-              0,
-              0
-            ],
-            "viewZoom": 1.0
-          },
-          "sequences": {
-            "viewOffset": [
-              0,
-              0
-            ],
-            "viewZoom": 1.0
-          },
-          "effects": {
-            "items": [
-              {
-                "parameters": [
-                  {
-                    "value": true,
-                    "controlAddress": "/enabled"
-                  },
-                  {
-                    "value": "Save weight only",
-                    "controlAddress": "/saveMode"
-                  },
-                  {
-                    "value": "",
-                    "controlAddress": "/tag"
-                  }
-                ],
-                "niceName": "Override (Color)",
-                "containers": {
-                  "effectParameters": {
-                    "containers": {
-                      "noise": {
-                        "niceName": "Noise",
-                        "containers": {
-                          "parameters": {
-                            "parameters": [
-                              {
-                                "value": 0.104000002145767,
-                                "controlAddress": "/speed"
-                              },
-                              {
-                                "value": 13.999999046325684,
-                                "controlAddress": "/timeOffsetByID"
-                              },
-                              {
-                                "value": 0.118863224983215,
-                                "controlAddress": "/balance"
-                              }
-                            ],
-                            "paramLinks": {
-                            }
-                          }
-                        },
-                        "type": "Noise"
-                      }
-                    },
-                    "paramLinks": {
-                    }
-                  },
-                  "filters": {
-                    "viewOffset": [
-                      0,
-                      0
-                    ],
-                    "viewZoom": 1.0
-                  }
-                },
-                "type": "Override (Color)",
-                "colorSource": {
-                  "niceName": "Noise",
-                  "containers": {
-                    "parameters": {
-                      "parameters": [
-                        {
-                          "value": 0.104000002145767,
-                          "controlAddress": "/speed"
-                        },
-                        {
-                          "value": 13.999999046325684,
-                          "controlAddress": "/timeOffsetByID"
-                        },
-                        {
-                          "value": 0.118863224983215,
-                          "controlAddress": "/balance"
-                        }
-                      ],
-                      "paramLinks": {
-                      }
-                    }
-                  },
-                  "type": "Noise"
-                }
-              }
-            ],
-            "viewOffset": [
-              0,
-              0
-            ],
-            "viewZoom": 1.0
-          },
-          "actionsOnLoad": {
-            "viewOffset": [
-              0,
-              0
-            ],
-            "viewZoom": 1.0
-          },
-          "actionsOnExit": {
-            "viewOffset": [
-              0,
-              0
-            ],
-            "viewZoom": 1.0
-          }
-        },
-        "type": "Scene",
-        "sceneData": {
-          "objects": {
-            "cube1": {
-              "components": {
-                "dimmer": {
-                  "/value": 1.0
-                },
-                "color": {
-                  "/solidColor/parameters/speed": 0.0,
-                  "/solidColor/parameters/timeOffset": 0.0,
-                  "/solidColor/parameters/timeOffsetByID": 0.0,
-                  "/solidColor/parameters/sourceColor": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                  ]
-                }
-              },
-              "effects": {
-              }
-            },
-            "cube2": {
-              "components": {
-                "dimmer": {
-                  "/value": 1.0
-                },
-                "color": {
-                  "/solidColor/parameters/speed": 0.0,
-                  "/solidColor/parameters/timeOffset": 0.0,
-                  "/solidColor/parameters/timeOffsetByID": 0.0,
-                  "/solidColor/parameters/sourceColor": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                  ]
-                }
-              },
-              "effects": {
-              }
-            },
-            "cube3": {
-              "components": {
-                "dimmer": {
-                  "/value": 1.0
-                },
-                "color": {
-                  "/solidColor/parameters/speed": 0.0,
-                  "/solidColor/parameters/timeOffset": 0.0,
-                  "/solidColor/parameters/timeOffsetByID": 0.0,
-                  "/solidColor/parameters/sourceColor": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                  ]
-                }
-              },
-              "effects": {
-              }
-            },
-            "cube4": {
-              "components": {
-                "dimmer": {
-                  "/value": 1.0
-                },
-                "color": {
-                  "/solidColor/parameters/speed": 0.0,
-                  "/solidColor/parameters/timeOffset": 0.0,
-                  "/solidColor/parameters/timeOffsetByID": 0.0,
-                  "/solidColor/parameters/sourceColor": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                  ]
-                }
-              },
-              "effects": {
-              }
-            },
-            "cube5": {
-              "components": {
-                "dimmer": {
-                  "/value": 1.0
-                },
-                "color": {
-                  "/solidColor/parameters/speed": 0.0,
-                  "/solidColor/parameters/timeOffset": 0.0,
-                  "/solidColor/parameters/timeOffsetByID": 0.0,
-                  "/solidColor/parameters/sourceColor": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                  ]
-                }
-              },
-              "effects": {
-              }
-            },
-            "cube6": {
-              "components": {
-                "dimmer": {
-                  "/value": 1.0
-                },
-                "color": {
-                  "/solidColor/parameters/speed": 0.0,
-                  "/solidColor/parameters/timeOffset": 0.0,
-                  "/solidColor/parameters/timeOffsetByID": 0.0,
-                  "/solidColor/parameters/sourceColor": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                  ]
-                }
-              },
-              "effects": {
-              }
-            },
-            "cube7": {
-              "components": {
-                "dimmer": {
-                  "/value": 1.0
-                },
-                "color": {
-                  "/solidColor/parameters/speed": 0.0,
-                  "/solidColor/parameters/timeOffset": 0.0,
-                  "/solidColor/parameters/timeOffsetByID": 0.0,
-                  "/solidColor/parameters/sourceColor": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                  ]
-                }
-              },
-              "effects": {
-              }
-            },
-            "cube8": {
-              "components": {
-                "dimmer": {
-                  "/value": 1.0
-                },
-                "color": {
-                  "/solidColor/parameters/speed": 0.0,
-                  "/solidColor/parameters/timeOffset": 0.0,
-                  "/solidColor/parameters/timeOffsetByID": 0.0,
-                  "/solidColor/parameters/sourceColor": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                  ]
-                }
-              },
-              "effects": {
-              }
-            },
-            "cube9": {
-              "components": {
-                "dimmer": {
-                  "/value": 1.0
-                },
-                "color": {
-                  "/solidColor/parameters/speed": 0.0,
-                  "/solidColor/parameters/timeOffset": 0.0,
-                  "/solidColor/parameters/timeOffsetByID": 0.0,
-                  "/solidColor/parameters/sourceColor": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                  ]
-                }
-              },
-              "effects": {
-              }
-            },
-            "cube10": {
-              "components": {
-                "dimmer": {
-                  "/value": 1.0
-                },
-                "color": {
-                  "/solidColor/parameters/speed": 0.0,
-                  "/solidColor/parameters/timeOffset": 0.0,
-                  "/solidColor/parameters/timeOffsetByID": 0.0,
-                  "/solidColor/parameters/sourceColor": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                  ]
-                }
-              },
-              "effects": {
-              }
-            },
-            "cube11": {
-              "components": {
-                "dimmer": {
-                  "/value": 1.0
-                },
-                "color": {
-                  "/solidColor/parameters/speed": 0.0,
-                  "/solidColor/parameters/timeOffset": 0.0,
-                  "/solidColor/parameters/timeOffsetByID": 0.0,
-                  "/solidColor/parameters/sourceColor": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                  ]
-                }
-              },
-              "effects": {
-              }
-            },
-            "cube12": {
-              "components": {
-                "dimmer": {
-                  "/value": 1.0
-                },
-                "color": {
-                  "/solidColor/parameters/speed": 0.0,
-                  "/solidColor/parameters/timeOffset": 0.0,
-                  "/solidColor/parameters/timeOffsetByID": 0.0,
-                  "/solidColor/parameters/sourceColor": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                  ]
-                }
-              },
-              "effects": {
-              }
-            },
-            "cube13": {
-              "components": {
-                "dimmer": {
-                  "/value": 1.0
-                },
-                "color": {
-                  "/solidColor/parameters/speed": 0.0,
-                  "/solidColor/parameters/timeOffset": 0.0,
-                  "/solidColor/parameters/timeOffsetByID": 0.0,
-                  "/solidColor/parameters/sourceColor": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                  ]
-                }
-              },
-              "effects": {
-              }
-            },
-            "cube14": {
-              "components": {
-                "dimmer": {
-                  "/value": 1.0
-                },
-                "color": {
-                  "/solidColor/parameters/speed": 0.0,
-                  "/solidColor/parameters/timeOffset": 0.0,
-                  "/solidColor/parameters/timeOffsetByID": 0.0,
-                  "/solidColor/parameters/sourceColor": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                  ]
-                }
-              },
-              "effects": {
-              }
-            },
-            "cube15": {
-              "components": {
-                "dimmer": {
-                  "/value": 1.0
-                },
-                "color": {
-                  "/solidColor/parameters/speed": 0.0,
-                  "/solidColor/parameters/timeOffset": 0.0,
-                  "/solidColor/parameters/timeOffsetByID": 0.0,
-                  "/solidColor/parameters/sourceColor": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                  ]
-                }
-              },
-              "effects": {
-              }
-            },
-            "cube16": {
-              "components": {
-                "dimmer": {
-                  "/value": 1.0
-                },
-                "color": {
-                  "/solidColor/parameters/speed": 0.0,
-                  "/solidColor/parameters/timeOffset": 0.0,
-                  "/solidColor/parameters/timeOffsetByID": 0.0,
-                  "/solidColor/parameters/sourceColor": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                  ]
-                }
-              },
-              "effects": {
-              }
-            },
-            "cube17": {
-              "components": {
-                "dimmer": {
-                  "/value": 1.0
-                },
-                "color": {
-                  "/solidColor/parameters/speed": 0.0,
-                  "/solidColor/parameters/timeOffset": 0.0,
-                  "/solidColor/parameters/timeOffsetByID": 0.0,
-                  "/solidColor/parameters/sourceColor": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                  ]
-                }
-              },
-              "effects": {
-              }
-            },
-            "cube18": {
-              "components": {
-                "dimmer": {
-                  "/value": 1.0
-                },
-                "color": {
-                  "/solidColor/parameters/speed": 0.0,
-                  "/solidColor/parameters/timeOffset": 0.0,
-                  "/solidColor/parameters/timeOffsetByID": 0.0,
-                  "/solidColor/parameters/sourceColor": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                  ]
-                }
-              },
-              "effects": {
-              }
-            },
-            "cube19": {
-              "components": {
-                "dimmer": {
-                  "/value": 1.0
-                },
-                "color": {
-                  "/solidColor/parameters/speed": 0.0,
-                  "/solidColor/parameters/timeOffset": 0.0,
-                  "/solidColor/parameters/timeOffsetByID": 0.0,
-                  "/solidColor/parameters/sourceColor": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                  ]
-                }
-              },
-              "effects": {
-              }
-            },
-            "cube20": {
-              "components": {
-                "dimmer": {
-                  "/value": 0.0
-                },
-                "color": {
-                  "/solidColor/parameters/speed": 0.0,
-                  "/solidColor/parameters/timeOffset": 0.0,
-                  "/solidColor/parameters/timeOffsetByID": 0.0,
-                  "/solidColor/parameters/sourceColor": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                  ]
-                }
-              },
-              "effects": {
-              }
-            }
-          },
-          "groups": {
-            "island": {
-              "effects": {
-              }
-            },
-            "acte1_MainGroup": {
-              "effects": {
-              }
-            }
-          },
-          "globalEffects": {
-            "effectGroup": {
-              "effects": {
-                "masterDimmer": {
-                  "/weight": 1.0
-                }
-              }
-            }
-          }
-        }
-      },
-      {
         "niceName": "2.10",
         "containers": {
           "loadingCurve": {
@@ -20115,6 +20086,10 @@
                     "controlAddress": "/saveMode"
                   },
                   {
+                    "value": 1.0,
+                    "controlAddress": "/weight"
+                  },
+                  {
                     "value": "",
                     "controlAddress": "/tag"
                   }
@@ -20633,7 +20608,7 @@
             "controlAddress": "/loadTime"
           }
         ],
-        "niceName": "Test Wave",
+        "niceName": "Test Wave Rainbpw",
         "containers": {
           "loadingCurve": {
             "parameters": [
@@ -20781,153 +20756,47 @@
                   }
                 ],
                 "niceName": "Override (Color)",
+                "editorIsCollapsed": true,
                 "containers": {
                   "effectParameters": {
                     "containers": {
-                      "solidColor": {
-                        "niceName": "Solid Color",
+                      "rainbow": {
+                        "niceName": "Rainbow",
                         "containers": {
                           "parameters": {
                             "parameters": [
                               {
-                                "value": [
-                                  1.0,
-                                  1.0,
-                                  1.0,
-                                  1.0
-                                ],
-                                "controlAddress": "/sourceColor"
+                                "value": 0.399999976158142,
+                                "controlAddress": "/speed"
+                              },
+                              {
+                                "value": 0.200000002980232,
+                                "controlAddress": "/timeOffsetByID"
+                              },
+                              {
+                                "value": 1.0,
+                                "controlAddress": "/brightness"
+                              },
+                              {
+                                "value": 1.0,
+                                "controlAddress": "/saturation"
+                              },
+                              {
+                                "value": 1.0,
+                                "controlAddress": "/density"
                               }
                             ],
                             "paramLinks": {
                             }
                           }
                         },
-                        "type": "Solid Color"
+                        "type": "Rainbow"
                       }
                     },
                     "paramLinks": {
                     }
                   },
                   "filters": {
-                    "items": [
-                      {
-                        "parameters": [
-                          {
-                            "value": "Use local",
-                            "controlAddress": "/idMode"
-                          },
-                          {
-                            "value": "",
-                            "controlAddress": "/layout",
-                            "enabled": false
-                          },
-                          {
-                            "value": [
-                              -0.051020398736,
-                              0.0,
-                              0.061224460601807
-                            ],
-                            "controlAddress": "/position"
-                          },
-                          {
-                            "value": 3.570995330810547,
-                            "controlAddress": "/size"
-                          }
-                        ],
-                        "niceName": "Layout Filter",
-                        "containers": {
-                          "fadeCurve": {
-                            "parameters": [
-                              {
-                                "value": 1.0,
-                                "controlAddress": "/length"
-                              },
-                              {
-                                "value": [
-                                  0.0,
-                                  1.0
-                                ],
-                                "controlAddress": "/viewValueRange"
-                              },
-                              {
-                                "value": [
-                                  0.0,
-                                  1.0
-                                ],
-                                "controlAddress": "/range",
-                                "enabled": true
-                              }
-                            ],
-                            "hideInRemoteControl": false,
-                            "items": [
-                              {
-                                "parameters": [
-                                  {
-                                    "value": 0.770053446292877,
-                                    "controlAddress": "/position"
-                                  },
-                                  {
-                                    "value": 1.0,
-                                    "controlAddress": "/value"
-                                  },
-                                  {
-                                    "value": "Bezier",
-                                    "controlAddress": "/easingType"
-                                  }
-                                ],
-                                "niceName": "Key 1",
-                                "containers": {
-                                  "easing": {
-                                    "parameters": [
-                                      {
-                                        "value": [
-                                          0.114081978797913,
-                                          0.0
-                                        ],
-                                        "controlAddress": "/anchor1"
-                                      },
-                                      {
-                                        "value": [
-                                          -0.114081978797913,
-                                          0.0
-                                        ],
-                                        "controlAddress": "/anchor2"
-                                      }
-                                    ]
-                                  }
-                                },
-                                "type": "Key"
-                              },
-                              {
-                                "parameters": [
-                                  {
-                                    "value": 1.0,
-                                    "controlAddress": "/position"
-                                  },
-                                  {
-                                    "value": "Bezier",
-                                    "controlAddress": "/easingType"
-                                  }
-                                ],
-                                "niceName": "Key",
-                                "containers": {
-                                  "easing": {
-                                  }
-                                },
-                                "type": "Key"
-                              }
-                            ],
-                            "viewOffset": [
-                              0,
-                              0
-                            ],
-                            "viewZoom": 1.0
-                          }
-                        },
-                        "type": "Layout Filter"
-                      }
-                    ],
                     "viewOffset": [
                       0,
                       0
@@ -20937,26 +20806,210 @@
                 },
                 "type": "Override (Color)",
                 "colorSource": {
-                  "niceName": "Solid Color",
+                  "niceName": "Rainbow",
                   "containers": {
                     "parameters": {
                       "parameters": [
                         {
-                          "value": [
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0
-                          ],
-                          "controlAddress": "/sourceColor"
+                          "value": 0.399999976158142,
+                          "controlAddress": "/speed"
+                        },
+                        {
+                          "value": 0.200000002980232,
+                          "controlAddress": "/timeOffsetByID"
+                        },
+                        {
+                          "value": 1.0,
+                          "controlAddress": "/brightness"
+                        },
+                        {
+                          "value": 1.0,
+                          "controlAddress": "/saturation"
+                        },
+                        {
+                          "value": 1.0,
+                          "controlAddress": "/density"
                         }
                       ],
                       "paramLinks": {
                       }
                     }
                   },
-                  "type": "Solid Color"
+                  "type": "Rainbow"
                 }
+              },
+              {
+                "parameters": [
+                  {
+                    "value": true,
+                    "controlAddress": "/enabled"
+                  },
+                  {
+                    "value": "Save weight only",
+                    "controlAddress": "/saveMode"
+                  },
+                  {
+                    "value": "",
+                    "controlAddress": "/tag"
+                  }
+                ],
+                "niceName": "Automation",
+                "editorIsCollapsed": true,
+                "containers": {
+                  "effectParameters": {
+                    "parameters": [
+                      {
+                        "value": 0.299999833106995,
+                        "controlAddress": "/speed"
+                      },
+                      {
+                        "value": 0.099999859929085,
+                        "controlAddress": "/timeOffsetByID"
+                      },
+                      {
+                        "value": 0.600000381469727,
+                        "controlAddress": "/length"
+                      },
+                      {
+                        "value": false,
+                        "controlAddress": "/clipTime"
+                      }
+                    ],
+                    "containers": {
+                      "curve": {
+                        "parameters": [
+                          {
+                            "value": 1.0,
+                            "controlAddress": "/length"
+                          },
+                          {
+                            "value": [
+                              0.0,
+                              1.0
+                            ],
+                            "controlAddress": "/viewValueRange"
+                          },
+                          {
+                            "value": [
+                              0.0,
+                              1.0
+                            ],
+                            "controlAddress": "/range",
+                            "enabled": true
+                          },
+                          {
+                            "value": "Proportional",
+                            "controlAddress": "/rangeRemapMode"
+                          }
+                        ],
+                        "hideInRemoteControl": false,
+                        "items": [
+                          {
+                            "parameters": [
+                              {
+                                "value": "Bezier",
+                                "controlAddress": "/easingType"
+                              }
+                            ],
+                            "niceName": "Key",
+                            "containers": {
+                              "easing": {
+                                "parameters": [
+                                  {
+                                    "value": [
+                                      0.150000005960464,
+                                      0.0
+                                    ],
+                                    "controlAddress": "/anchor1"
+                                  },
+                                  {
+                                    "value": [
+                                      -0.150000005960464,
+                                      0.0
+                                    ],
+                                    "controlAddress": "/anchor2"
+                                  }
+                                ]
+                              }
+                            },
+                            "type": "Key"
+                          },
+                          {
+                            "parameters": [
+                              {
+                                "value": 0.491243422031403,
+                                "controlAddress": "/position"
+                              },
+                              {
+                                "value": 1.0,
+                                "controlAddress": "/value"
+                              },
+                              {
+                                "value": "Bezier",
+                                "controlAddress": "/easingType"
+                              }
+                            ],
+                            "niceName": "Key 1",
+                            "containers": {
+                              "easing": {
+                                "parameters": [
+                                  {
+                                    "value": [
+                                      0.150000005960464,
+                                      0.0
+                                    ],
+                                    "controlAddress": "/anchor1"
+                                  },
+                                  {
+                                    "value": [
+                                      -0.150000005960464,
+                                      0.0
+                                    ],
+                                    "controlAddress": "/anchor2"
+                                  }
+                                ]
+                              }
+                            },
+                            "type": "Key"
+                          },
+                          {
+                            "parameters": [
+                              {
+                                "value": 1.0,
+                                "controlAddress": "/position"
+                              },
+                              {
+                                "value": "Bezier",
+                                "controlAddress": "/easingType"
+                              }
+                            ],
+                            "niceName": "Key 2",
+                            "containers": {
+                              "easing": {
+                              }
+                            },
+                            "type": "Key"
+                          }
+                        ],
+                        "viewOffset": [
+                          0,
+                          0
+                        ],
+                        "viewZoom": 1.0
+                      }
+                    },
+                    "paramLinks": {
+                    }
+                  },
+                  "filters": {
+                    "viewOffset": [
+                      0,
+                      0
+                    ],
+                    "viewZoom": 1.0
+                  }
+                },
+                "type": "Automation"
               }
             ],
             "viewOffset": [
@@ -21416,6 +21469,885 @@
             }
           }
         }
+      },
+      {
+        "parameters": [
+          {
+            "value": 4.699998378753662,
+            "controlAddress": "/loadTime"
+          }
+        ],
+        "niceName": "Test Wave Rainbpw 1",
+        "containers": {
+          "loadingCurve": {
+            "parameters": [
+              {
+                "value": 1.0,
+                "controlAddress": "/length"
+              },
+              {
+                "value": [
+                  0.0,
+                  1.0
+                ],
+                "controlAddress": "/viewValueRange"
+              },
+              {
+                "value": [
+                  0.0,
+                  1.0
+                ],
+                "controlAddress": "/range",
+                "enabled": true
+              }
+            ],
+            "hideInRemoteControl": false,
+            "items": [
+              {
+                "parameters": [
+                  {
+                    "value": "Bezier",
+                    "controlAddress": "/easingType"
+                  }
+                ],
+                "niceName": "Key",
+                "containers": {
+                  "easing": {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.004708520136774,
+                          0.241111099720001
+                        ],
+                        "controlAddress": "/anchor1"
+                      },
+                      {
+                        "value": [
+                          -0.02242149412632,
+                          -0.117957770824432
+                        ],
+                        "controlAddress": "/anchor2"
+                      }
+                    ]
+                  }
+                },
+                "type": "Key"
+              },
+              {
+                "parameters": [
+                  {
+                    "value": 0.02242149412632,
+                    "controlAddress": "/position"
+                  },
+                  {
+                    "value": 0.490375578403473,
+                    "controlAddress": "/value"
+                  },
+                  {
+                    "value": "Bezier",
+                    "controlAddress": "/easingType"
+                  }
+                ],
+                "niceName": "Key 2",
+                "containers": {
+                  "easing": {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.044843077659607,
+                          0.117957770824432
+                        ],
+                        "controlAddress": "/anchor1"
+                      },
+                      {
+                        "value": [
+                          -0.192825138568878,
+                          0.0
+                        ],
+                        "controlAddress": "/anchor2"
+                      }
+                    ]
+                  }
+                },
+                "type": "Key"
+              },
+              {
+                "parameters": [
+                  {
+                    "value": 1.0,
+                    "controlAddress": "/position"
+                  },
+                  {
+                    "value": 1.0,
+                    "controlAddress": "/value"
+                  },
+                  {
+                    "value": "Bezier",
+                    "controlAddress": "/easingType"
+                  }
+                ],
+                "niceName": "Key 1",
+                "containers": {
+                  "easing": {
+                  }
+                },
+                "type": "Key"
+              }
+            ],
+            "viewOffset": [
+              0,
+              0
+            ],
+            "viewZoom": 1.0
+          },
+          "sequences": {
+            "viewOffset": [
+              0,
+              0
+            ],
+            "viewZoom": 1.0
+          },
+          "effects": {
+            "items": [
+              {
+                "parameters": [
+                  {
+                    "value": true,
+                    "controlAddress": "/enabled"
+                  },
+                  {
+                    "value": "Save weight only",
+                    "controlAddress": "/saveMode"
+                  },
+                  {
+                    "value": "",
+                    "controlAddress": "/tag"
+                  }
+                ],
+                "niceName": "Override (Color)",
+                "containers": {
+                  "effectParameters": {
+                    "containers": {
+                      "noise": {
+                        "niceName": "Noise",
+                        "containers": {
+                          "parameters": {
+                            "parameters": [
+                              {
+                                "value": 2.400000095367432,
+                                "controlAddress": "/speed"
+                              },
+                              {
+                                "value": 0.700000047683716,
+                                "controlAddress": "/timeOffsetByID"
+                              },
+                              {
+                                "value": [
+                                  0.181818187236786,
+                                  1.0,
+                                  0.203931272029877,
+                                  1.0
+                                ],
+                                "controlAddress": "/frontColor"
+                              },
+                              {
+                                "value": [
+                                  0.323232352733612,
+                                  1.0,
+                                  0.711916506290436,
+                                  1.0
+                                ],
+                                "controlAddress": "/backgroundColor"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        },
+                        "type": "Noise"
+                      }
+                    },
+                    "paramLinks": {
+                    }
+                  },
+                  "filters": {
+                    "viewOffset": [
+                      0,
+                      0
+                    ],
+                    "viewZoom": 1.0
+                  }
+                },
+                "type": "Override (Color)",
+                "colorSource": {
+                  "niceName": "Noise",
+                  "containers": {
+                    "parameters": {
+                      "parameters": [
+                        {
+                          "value": 2.400000095367432,
+                          "controlAddress": "/speed"
+                        },
+                        {
+                          "value": 0.700000047683716,
+                          "controlAddress": "/timeOffsetByID"
+                        },
+                        {
+                          "value": [
+                            0.181818187236786,
+                            1.0,
+                            0.203931272029877,
+                            1.0
+                          ],
+                          "controlAddress": "/frontColor"
+                        },
+                        {
+                          "value": [
+                            0.323232352733612,
+                            1.0,
+                            0.711916506290436,
+                            1.0
+                          ],
+                          "controlAddress": "/backgroundColor"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  "type": "Noise"
+                }
+              },
+              {
+                "parameters": [
+                  {
+                    "value": true,
+                    "controlAddress": "/enabled"
+                  },
+                  {
+                    "value": "Save weight only",
+                    "controlAddress": "/saveMode"
+                  },
+                  {
+                    "value": "",
+                    "controlAddress": "/tag"
+                  }
+                ],
+                "niceName": "Automation",
+                "containers": {
+                  "effectParameters": {
+                    "parameters": [
+                      {
+                        "value": 0.499999821186066,
+                        "controlAddress": "/speed"
+                      },
+                      {
+                        "value": 0.099999859929085,
+                        "controlAddress": "/timeOffsetByID"
+                      },
+                      {
+                        "value": 1.500000476837158,
+                        "controlAddress": "/length"
+                      },
+                      {
+                        "value": false,
+                        "controlAddress": "/clipTime"
+                      }
+                    ],
+                    "containers": {
+                      "curve": {
+                        "parameters": [
+                          {
+                            "value": 1.0,
+                            "controlAddress": "/length"
+                          },
+                          {
+                            "value": [
+                              0.0,
+                              1.0
+                            ],
+                            "controlAddress": "/viewValueRange"
+                          },
+                          {
+                            "value": [
+                              0.0,
+                              1.0
+                            ],
+                            "controlAddress": "/range",
+                            "enabled": true
+                          },
+                          {
+                            "value": "Proportional",
+                            "controlAddress": "/rangeRemapMode"
+                          }
+                        ],
+                        "hideInRemoteControl": false,
+                        "items": [
+                          {
+                            "parameters": [
+                              {
+                                "value": "Bezier",
+                                "controlAddress": "/easingType"
+                              }
+                            ],
+                            "niceName": "Key",
+                            "containers": {
+                              "easing": {
+                                "parameters": [
+                                  {
+                                    "value": [
+                                      0.150000005960464,
+                                      0.0
+                                    ],
+                                    "controlAddress": "/anchor1"
+                                  },
+                                  {
+                                    "value": [
+                                      -0.150000005960464,
+                                      0.0
+                                    ],
+                                    "controlAddress": "/anchor2"
+                                  }
+                                ]
+                              }
+                            },
+                            "type": "Key"
+                          },
+                          {
+                            "parameters": [
+                              {
+                                "value": 0.491243422031403,
+                                "controlAddress": "/position"
+                              },
+                              {
+                                "value": 1.0,
+                                "controlAddress": "/value"
+                              },
+                              {
+                                "value": "Bezier",
+                                "controlAddress": "/easingType"
+                              }
+                            ],
+                            "niceName": "Key 1",
+                            "containers": {
+                              "easing": {
+                                "parameters": [
+                                  {
+                                    "value": [
+                                      0.150000005960464,
+                                      0.0
+                                    ],
+                                    "controlAddress": "/anchor1"
+                                  },
+                                  {
+                                    "value": [
+                                      -0.150000005960464,
+                                      0.0
+                                    ],
+                                    "controlAddress": "/anchor2"
+                                  }
+                                ]
+                              }
+                            },
+                            "type": "Key"
+                          },
+                          {
+                            "parameters": [
+                              {
+                                "value": 1.0,
+                                "controlAddress": "/position"
+                              },
+                              {
+                                "value": "Bezier",
+                                "controlAddress": "/easingType"
+                              }
+                            ],
+                            "niceName": "Key 2",
+                            "containers": {
+                              "easing": {
+                              }
+                            },
+                            "type": "Key"
+                          }
+                        ],
+                        "viewOffset": [
+                          0,
+                          0
+                        ],
+                        "viewZoom": 1.0
+                      }
+                    },
+                    "paramLinks": {
+                    }
+                  },
+                  "filters": {
+                    "viewOffset": [
+                      0,
+                      0
+                    ],
+                    "viewZoom": 1.0
+                  }
+                },
+                "type": "Automation"
+              }
+            ],
+            "viewOffset": [
+              0,
+              0
+            ],
+            "viewZoom": 1.0
+          },
+          "actionsOnLoad": {
+            "editorIsCollapsed": true,
+            "viewOffset": [
+              0,
+              0
+            ],
+            "viewZoom": 1.0
+          },
+          "actionsOnExit": {
+            "viewOffset": [
+              0,
+              0
+            ],
+            "viewZoom": 1.0
+          }
+        },
+        "type": "Scene",
+        "sceneData": {
+          "objects": {
+            "cube1": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube2": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube3": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube4": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube5": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube6": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube7": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube8": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube9": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube10": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube11": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube12": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube13": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube14": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube15": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube16": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube17": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube18": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube19": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            },
+            "cube20": {
+              "components": {
+                "dimmer": {
+                  "/value": 1.0
+                },
+                "color": {
+                  "/solidColor/parameters/speed": 0.0,
+                  "/solidColor/parameters/timeOffset": 0.0,
+                  "/solidColor/parameters/timeOffsetByID": 0.0,
+                  "/solidColor/parameters/sourceColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "effects": {
+              }
+            }
+          },
+          "groups": {
+            "island": {
+              "effects": {
+              }
+            },
+            "islandExterior": {
+              "effects": {
+              }
+            },
+            "acte1_MainGroup": {
+              "effects": {
+              }
+            }
+          },
+          "globalEffects": {
+            "effectGroup": {
+              "effects": {
+                "masterDimmer": {
+                  "/weight": 1.0
+                }
+              }
+            },
+            "stomp": {
+              "effects": {
+                "override_Color_": {
+                  "/weight": 0.0
+                }
+              }
+            }
+          }
+        }
       }
     ],
     "viewOffset": [
@@ -21461,7 +22393,7 @@
                   "effectParameters": {
                     "parameters": [
                       {
-                        "value": 1.0,
+                        "value": 0.0,
                         "minValue": -1.0,
                         "maxValue": 1.0,
                         "default": 0.0,
