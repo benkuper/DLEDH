@@ -20154,7 +20154,7 @@
                                 "controlAddress": "/backgroundColor"
                               },
                               {
-                                "value": 4.0,
+                                "value": 8.0,
                                 "controlAddress": "/position"
                               },
                               {
@@ -20213,7 +20213,7 @@
                           "controlAddress": "/backgroundColor"
                         },
                         {
-                          "value": 4.0,
+                          "value": 8.0,
                           "controlAddress": "/position"
                         },
                         {
