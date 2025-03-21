@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Composition name="Composition" uniqueId="1742545901668" numDecks="3" currentDeckIndex="0" numLayers="4" numColumns="36" compositionIsRelative="0">
+<Composition name="Composition" uniqueId="1742553070930" numDecks="3" currentDeckIndex="0" numLayers="4" numColumns="36" compositionIsRelative="0">
 	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="6" microVersion="0" revision="79034"/>
 	<CompositionInfo name="Ultreia DLEDH LOCAL" description="" width="1920" height="980">
 		<DeckInfo name="Unity Ocean" id="1742055580691" closed="0"/>
@@ -8,8 +8,8 @@
 	</CompositionInfo>
 	<Params name="Params">
 		<Param name="Name" T="STRING" default="" value="Ultreia DLEDH LOCAL"/>
-		<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999961275421">
-			<PhaseSourceStatic name="PhaseSourceStatic" phase="0.24999999999994559907"/>
+		<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999950950347">
+			<PhaseSourceStatic name="PhaseSourceStatic" phase="0.24999999999993005595"/>
 		</ParamRange>
 		<Param name="KeyboardShortcutPreset" T="STRING" default="" value="Default"/>
 		<Param name="MidiShortcutPreset" T="STRING" default="" value="Default"/>
@@ -33,7 +33,7 @@
 				<PhaseSourceStatic name="PhaseSourceStatic" phase="0.0299072265625"/>
 			</ParamRange>
 		</Params>
-		<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545901685" baseType="RenderPassChain">
+		<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553070947" baseType="RenderPassChain">
 			<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742055580687" baseType="Effect" index="0">
 				<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 			</RenderPass>
@@ -44,7 +44,13 @@
 		<Params name="Params">
 			<Param name="Name" T="STRING" default="Layer #" value="Wall"/>
 		</Params>
-		<ClipTransition name="ClipTransition"/>
+		<ClipTransition name="ClipTransition">
+			<Params name="Params">
+				<ParamRange name="Duration" T="DOUBLE" default="0" value="10">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+				</ParamRange>
+			</Params>
+		</ClipTransition>
 		<LayerView name="LayerView">
 			<FoldParams name="FoldParams"/>
 		</LayerView>
@@ -60,7 +66,7 @@
 					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.0299072265625"/>
 				</ParamRange>
 			</Params>
-			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545902693" baseType="RenderPassChain">
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553071957" baseType="RenderPassChain">
 				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742055580369" baseType="Effect" index="0">
 					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 				</RenderPass>
@@ -69,7 +75,7 @@
 				<Params name="Params">
 					<ParamChoice name="Blend Mode" T="UINT64" default="0" value="67464115" storeChoices="0"/>
 				</Params>
-				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1742545903503" baseType="Mixer"/>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1742553072714" baseType="Mixer"/>
 			</ChoosableMixer>
 			<ChoosableMixer name="Transition">
 				<Params name="Params">
@@ -77,8 +83,8 @@
 				</Params>
 				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1742163267647" baseType="Mixer">
 					<Params name="Params">
-						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.99931621551513671875">
-							<PhaseSourceStatic name="PhaseSourceStatic" phase="0.99931621551513671875"/>
+						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.99955987930297851562">
+							<PhaseSourceStatic name="PhaseSourceStatic" phase="0.99955987930297851562"/>
 						</ParamRange>
 					</Params>
 				</RenderPass>
@@ -98,8 +104,8 @@
 		</AudioTrack>
 		<VideoTrack name="VideoTrack">
 			<Params name="Params">
-				<ParamRange name="Opacity" T="DOUBLE" default="0.5" value="0.49166667461395263672">
-					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.49166667461395263672"/>
+				<ParamRange name="Opacity" T="DOUBLE" default="0.5" value="0">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0"/>
 				</ParamRange>
 				<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
 					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
@@ -108,7 +114,7 @@
 					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.0299072265625"/>
 				</ParamRange>
 			</Params>
-			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545902704" baseType="RenderPassChain">
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553071968" baseType="RenderPassChain">
 				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742163267383" baseType="Effect" index="0">
 					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 				</RenderPass>
@@ -117,7 +123,13 @@
 				<Params name="Params">
 					<ParamChoice name="Blend Mode" T="UINT64" default="0" value="67464212" storeChoices="0"/>
 				</Params>
-				<RenderPass name="Screen" type="Screen" uniqueTypeId="A012" uniqueId="1742545903505" baseType="Mixer"/>
+				<RenderPass name="Screen" type="Screen" uniqueTypeId="A012" uniqueId="1742553072716" baseType="Mixer">
+					<Params name="Params">
+						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.00099295377731323242188">
+							<PhaseSourceStatic name="PhaseSourceStatic" phase="0.00099295377731323242188"/>
+						</ParamRange>
+					</Params>
+				</RenderPass>
 			</ChoosableMixer>
 			<ChoosableMixer name="Transition">
 				<Params name="Params">
@@ -143,6 +155,9 @@
 		</AudioTrack>
 		<VideoTrack name="VideoTrack">
 			<Params name="Params">
+				<ParamRange name="Opacity" T="DOUBLE" default="0.5" value="0">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0"/>
+				</ParamRange>
 				<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
 					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
 				</ParamRange>
@@ -150,7 +165,7 @@
 					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.0299072265625"/>
 				</ParamRange>
 			</Params>
-			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545902715" baseType="RenderPassChain">
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553071979" baseType="RenderPassChain">
 				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288574680" baseType="Effect" index="0">
 					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 				</RenderPass>
@@ -161,8 +176,8 @@
 				</Params>
 				<RenderPass name="Add" type="Add" uniqueTypeId="A005" uniqueId="1742288574950" baseType="Mixer">
 					<Params name="Params">
-						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.5">
-							<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.00012859702110290527344">
+							<PhaseSourceStatic name="PhaseSourceStatic" phase="0.00012859702110290527344"/>
 						</ParamRange>
 					</Params>
 				</RenderPass>
@@ -195,7 +210,7 @@
 					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.0299072265625"/>
 				</ParamRange>
 			</Params>
-			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545902726" baseType="RenderPassChain">
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553071990" baseType="RenderPassChain">
 				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288574692" baseType="Effect" index="0">
 					<Params name="Params">
 						<ParamRange name="Position Y" T="DOUBLE" default="0" value="-116.5">
@@ -241,7 +256,7 @@
 					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.032958984375"/>
 				</ParamRange>
 			</Params>
-			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545901693" baseType="RenderPassChain">
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553070955" baseType="RenderPassChain">
 				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742055580689" baseType="Effect" index="0">
 					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 				</RenderPass>
@@ -267,10 +282,10 @@
 			</ParamRange>
 		</Params>
 	</TempoController>
-	<Deck name="Deck" uniqueId="1742055580691" closed="0" numLayersWithContent="4" numColumnsWithContent="35" numLayers="4" numColumns="36" deckIndex="0">
+	<Deck name="Deck" uniqueId="1742055580691" closed="0" numLayersWithContent="4" numColumnsWithContent="34" numLayers="4" numColumns="36" deckIndex="0">
 		<Params name="Params">
 			<Param name="Name" T="STRING" default="empty" value="Unity Ocean"/>
-			<Param name="ScrollX" T="INT32" default="0" value="44"/>
+			<Param name="ScrollX" T="INT32" default="0" value="315"/>
 		</Params>
 		<Column uniqueId="1742055580721" columnIndex="0">
 			<Params name="Params">
@@ -358,26 +373,26 @@
 			</ClipView>
 			<VideoTrack name="VideoTrack" manualDuration="0">
 				<Params name="Params">
-					<ParamRange name="Width" T="DOUBLE" default="640" value="640">
-						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.01953125"/>
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
 					</ParamRange>
-					<ParamRange name="Height" T="DOUBLE" default="480" value="480">
-						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.0146484375"/>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.032958984375"/>
 					</ParamRange>
 					<Param name="RScale" T="BOOL" default="1" value="1"/>
 					<Param name="GScale" T="BOOL" default="1" value="1"/>
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903261" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072521" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742459438249" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
 				</RenderPass>
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
-					<VideoSource storage="0" name="VideoSource" width="640" height="480" type="NDIVideoSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903272" baseType="RenderPassChain">
+					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="NDIVideoSource">
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072532" baseType="RenderPassChain">
 							<RenderPass name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742459438243" baseType="Effect" index="0"/>
 							<RenderPass name="FormatConversion" type="FormatConversion" uniqueTypeId="12949899826025724691" uniqueId="1742459438241" baseType="Effect" index="1"/>
 						</RenderPass>
@@ -429,7 +444,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903284" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072544" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742459438261" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -437,7 +452,7 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="640" height="480" type="NDIVideoSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903295" baseType="RenderPassChain">
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072555" baseType="RenderPassChain">
 							<RenderPass name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742459438266" baseType="Effect" index="0"/>
 							<RenderPass name="FormatConversion" type="FormatConversion" uniqueTypeId="12949899826025724691" uniqueId="1742459438268" baseType="Effect" index="1"/>
 						</RenderPass>
@@ -478,26 +493,26 @@
 			</ClipView>
 			<VideoTrack name="VideoTrack" manualDuration="0">
 				<Params name="Params">
-					<ParamRange name="Width" T="DOUBLE" default="640" value="640">
-						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.01953125"/>
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
 					</ParamRange>
-					<ParamRange name="Height" T="DOUBLE" default="480" value="480">
-						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.0146484375"/>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.032958984375"/>
 					</ParamRange>
 					<Param name="RScale" T="BOOL" default="1" value="1"/>
 					<Param name="GScale" T="BOOL" default="1" value="1"/>
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903307" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072567" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742459438300" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
 				</RenderPass>
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
-					<VideoSource storage="0" name="VideoSource" width="640" height="480" type="NDIVideoSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903318" baseType="RenderPassChain">
+					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="NDIVideoSource">
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072578" baseType="RenderPassChain">
 							<RenderPass name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742459438305" baseType="Effect" index="0"/>
 							<RenderPass name="FormatConversion" type="FormatConversion" uniqueTypeId="12949899826025724691" uniqueId="1742459438307" baseType="Effect" index="1"/>
 						</RenderPass>
@@ -523,8 +538,8 @@
 						<DurationSource name="DurationSource" defaultDuration="4.4583333333333330373s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="4458.3333333333330302" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999971600495">
-									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.24999999999996114219"/>
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999961275421">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.24999999999994559907"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="4.4583333333333330373" value="2">
 									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.44859813084112154513"/>
@@ -563,7 +578,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545902898" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072162" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742209902189" baseType="Effect" index="0">
 						<Params name="Params">
 							<ParamRange name="Position X" T="DOUBLE" default="0" value="2">
@@ -582,7 +597,7 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903331" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072593" baseType="RenderPassChain"/>
 						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Shockwave 3.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
@@ -612,33 +627,34 @@
 				</Params>
 			</Transport>
 			<ClipView name="ClipView">
-				<FoldParams name="FoldParams"/>
+				<FoldParams name="FoldParams">
+					<FoldState component="/groupedcomponent/renderpasschaincomponent/bright.contrast/" folded="1"/>
+					<FoldState component="/groupedcomponent/renderpasschaincomponent/bright.contrast/0" folded="1"/>
+				</FoldParams>
 			</ClipView>
 			<VideoTrack name="VideoTrack" manualDuration="0">
 				<Params name="Params">
-					<ParamRange name="Width" T="DOUBLE" default="640" value="640">
-						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.01953125"/>
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
 					</ParamRange>
-					<ParamRange name="Height" T="DOUBLE" default="480" value="480">
-						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.0146484375"/>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.032958984375"/>
 					</ParamRange>
 					<Param name="RScale" T="BOOL" default="1" value="1"/>
 					<Param name="GScale" T="BOOL" default="1" value="1"/>
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903334" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072602" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742055580841" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
 					<RenderPass storage="0" name="BrightnessContrast" type="DryWetEffect" uniqueTypeId="A102" uniqueId="1742374868604" baseType="DryWetEffect" index="1">
-						<Params name="Params">
-							<Param name="Bypassed" altName="Bypass" T="BOOL" default="0" value="1"/>
-						</Params>
+						<View name="View" folded="1"/>
 						<RenderPass name="BrightnessContrast" type="BrightnessContrast" uniqueTypeId="A102" uniqueId="1742374868602" baseType="Effect" dwType="Effect">
 							<Params name="Params">
-								<ParamRange name="Brightness" T="DOUBLE" default="0" value="-0.16210526315789464125">
-									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.41894736842105267938"/>
+								<ParamRange name="Brightness" T="DOUBLE" default="0" value="0.19496855345911945356">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.59748427672955972678"/>
 								</ParamRange>
 								<ParamRange name="Contrast" T="DOUBLE" default="0" value="3.2123766313674195771e-08">
 									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50000001606188315684"/>
@@ -646,50 +662,22 @@
 							</Params>
 						</RenderPass>
 						<ChoosableMixer name="Mixer">
-							<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1742545903508" baseType="Mixer"/>
-						</ChoosableMixer>
-					</RenderPass>
-					<RenderPass storage="0" name="Saturation" type="DryWetEffect" uniqueTypeId="A110" uniqueId="1742459438335" baseType="DryWetEffect" index="2">
-						<View name="View" folded="1"/>
-						<RenderPass name="Saturation" type="Saturation" uniqueTypeId="A110" uniqueId="1742459438333" baseType="Effect" dwType="Effect">
-							<Params name="Params">
-								<ParamRange name="Saturation" T="DOUBLE" default="0.5" value="0.69999999999999995559">
-									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.69999999999999995559"/>
-								</ParamRange>
-							</Params>
-						</RenderPass>
-						<ChoosableMixer name="Mixer">
-							<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1742545903510" baseType="Mixer"/>
-						</ChoosableMixer>
-					</RenderPass>
-					<RenderPass storage="0" name="BrightnessContrast" type="DryWetEffect" uniqueTypeId="A102" uniqueId="1742459438342" baseType="DryWetEffect" index="3">
-						<Params name="Params">
-							<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.61805555555555558023">
-								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.61805555555555558023"/>
-							</ParamRange>
-						</Params>
-						<View name="View" folded="1"/>
-						<RenderPass name="BrightnessContrast" type="BrightnessContrast" uniqueTypeId="A102" uniqueId="1742459438340" baseType="Effect" dwType="Effect">
-							<Params name="Params">
-								<ParamRange name="Brightness" T="DOUBLE" default="0" value="-0.28421052631578946901">
-									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.3578947368421052655"/>
-								</ParamRange>
-								<ParamRange name="Contrast" T="DOUBLE" default="0" value="0.10526315789473694728">
-									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.55263157894736847364"/>
-								</ParamRange>
-							</Params>
-						</RenderPass>
-						<ChoosableMixer name="Mixer">
-							<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1742545903512" baseType="Mixer"/>
+							<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1742553072768" baseType="Mixer">
+								<Params name="Params">
+									<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.99295774647887324882">
+										<PhaseSourceStatic name="PhaseSourceStatic" phase="0.99295774647887324882"/>
+									</ParamRange>
+								</Params>
+							</RenderPass>
 						</ChoosableMixer>
 					</RenderPass>
 				</RenderPass>
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
-					<VideoSource storage="0" name="VideoSource" width="640" height="480" type="NDIVideoSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903366" baseType="RenderPassChain">
-							<RenderPass name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742459438192" baseType="Effect" index="0"/>
-							<RenderPass name="FormatConversion" type="FormatConversion" uniqueTypeId="12949899826025724691" uniqueId="1742459438190" baseType="Effect" index="1"/>
+					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="NDIVideoSource">
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072628" baseType="RenderPassChain">
+							<RenderPass name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742548170587" baseType="Effect" index="0"/>
+							<RenderPass name="FormatConversion" type="FormatConversion" uniqueTypeId="12949899826025724691" uniqueId="1742548170585" baseType="Effect" index="1"/>
 						</RenderPass>
 						<NDIVideoInfo sourceName="GAMGIE-LAPTOP (Unity Ocean Wall)"/>
 						<Params name="Settings">
@@ -739,14 +727,11 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545902895" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072165" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742163267834" baseType="Effect" index="0">
 						<Params name="Params">
-							<ParamRange name="Position Y" T="DOUBLE" default="0" value="-260">
-								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.49603271484375"/>
-							</ParamRange>
-							<ParamRange name="Scale" T="DOUBLE" default="100" value="67.463768115942031045">
-								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.067463768115942027159"/>
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="-329.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.49497222900390625"/>
 							</ParamRange>
 						</Params>
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
@@ -755,7 +740,7 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1280" height="720" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903379" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072641" baseType="RenderPassChain"/>
 						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Storm Lightning.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
@@ -801,7 +786,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545902905" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072185" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742163267862" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -809,7 +794,7 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="2560" height="1440" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903389" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072651" baseType="RenderPassChain"/>
 						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Storm Rain.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
@@ -822,17 +807,18 @@
 		<Clip name="Clip" uniqueId="1742288575924" layerIndex="3" columnIndex="4"/>
 		<Clip name="Clip" uniqueId="1742055580697" layerIndex="0" columnIndex="5">
 			<PreloadData>
-				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Flocking Major v2.mov"/>
+				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Flocking Major v4.mov"/>
 			</PreloadData>
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Flocking Major v1" value="Flocking Major v2"/>
+				<Param name="Name" T="STRING" default="Flocking Major v1" value="Flocking Major v3"/>
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+				<Param name="AutoPilot" default="AAAAAAAAAAA=,AAAAAAAAAAA=" value="AQAAAAAAAAA=,AAAAAAAAAAA="/>
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
 					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
-						<DurationSource name="DurationSource" defaultDuration="337.01529534791933429s"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="337015.29534791933838" defaultBeatsDuration="512">
+						<DurationSource name="DurationSource" defaultDuration="211.26580702389722433s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="211265.80702389721409" defaultBeatsDuration="512">
 							<Params name="Params">
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="337.01529534791933429" value="1.9999999999999988898">
 									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.0059344487553162515378"/>
@@ -841,12 +827,13 @@
 							</Params>
 							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="512" detectedTempo="-1" manualTempo="120" detected="0"/>
 						</PhaseSourceTransportTimeline>
-						<ValueRange name="minMax" min="0" max="337015.29534791933838"/>
+						<ValueRange name="minMax" min="0" max="211265.80702389721409"/>
 					</ParamRange>
 				</Params>
 			</Transport>
 			<ClipView name="ClipView">
 				<FoldParams name="FoldParams">
+					<FoldState component="/groupedcomponent/autopilot/" folded="0"/>
 					<FoldState component="/groupedcomponent/renderpasschaincomponent/vignette/" folded="0"/>
 					<FoldState component="/groupedcomponent/renderpasschaincomponent/vignette/groupedcomponent/" folded="0"/>
 				</FoldParams>
@@ -864,7 +851,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545902912" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553073284" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742092121946" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -872,8 +859,8 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903401" baseType="RenderPassChain"/>
-						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Flocking Major v2.mov" LoadingThread="TTM_THREADED"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553073281" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Flocking Major v4.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
@@ -883,25 +870,25 @@
 		<Clip name="Clip" uniqueId="1742288575925" layerIndex="3" columnIndex="5"/>
 		<Clip name="Clip" uniqueId="1742288575244" layerIndex="0" columnIndex="6">
 			<PreloadData>
-				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Flocking Minor  v1.mov"/>
+				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Flocking Minor v3.mov"/>
 			</PreloadData>
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Flocking Minor  v1" value="Flocking Minor  v1"/>
+				<Param name="Name" T="STRING" default="Flocking Minor v3" value="Flocking Minor v3"/>
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
 					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
-						<DurationSource name="DurationSource" defaultDuration="185.51591180048910701s"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="185515.91180048912065" defaultBeatsDuration="256">
+						<DurationSource name="DurationSource" defaultDuration="96.86627251679477979s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="96866.272516794779222" defaultBeatsDuration="256">
 							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="185.51591180048910701" value="1.9999999999999995559">
-									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.010780746409239956932"/>
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="96.86627251679477979" value="1.9999999999999995559">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.020647021383559869406"/>
 								</ParamRange>
 							</Params>
 							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="256" detectedTempo="-1" manualTempo="120" detected="0"/>
 						</PhaseSourceTransportTimeline>
-						<ValueRange name="minMax" min="0" max="185515.91180048909155"/>
+						<ValueRange name="minMax" min="0" max="96866.272516794779222"/>
 					</ParamRange>
 				</Params>
 			</Transport>
@@ -921,16 +908,28 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545902901" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072160" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288575248" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+					<RenderPass storage="0" name="BrightnessContrast" type="DryWetEffect" uniqueTypeId="A102" uniqueId="1742553073260" baseType="DryWetEffect" index="1">
+						<RenderPass name="BrightnessContrast" type="BrightnessContrast" uniqueTypeId="A102" uniqueId="1742553073258" baseType="Effect" dwType="Effect">
+							<Params name="Params">
+								<ParamRange name="Contrast" T="DOUBLE" default="0" value="0.43529411764705883137">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.71764705882352941568"/>
+								</ParamRange>
+							</Params>
+						</RenderPass>
+						<ChoosableMixer name="Mixer">
+							<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1742553073263" baseType="Mixer"/>
+						</ChoosableMixer>
 					</RenderPass>
 				</RenderPass>
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903411" baseType="RenderPassChain"/>
-						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Flocking Minor  v1.mov" LoadingThread="TTM_THREADED"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072671" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Flocking Minor v3.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
@@ -956,8 +955,8 @@
 						<DurationSource name="DurationSource" defaultDuration="254.03999999999999204s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="254040" defaultBeatsDuration="512">
 							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="254.03999999999999204" value="2">
-									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.0078727759407967255051"/>
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="254.03999999999999204" value="1.9999999999999986677">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.0078727759407967203009"/>
 								</ParamRange>
 								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
 							</Params>
@@ -983,7 +982,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545902909" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072168" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742097934096" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -996,14 +995,14 @@
 							</Params>
 						</RenderPass>
 						<ChoosableMixer name="Mixer">
-							<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1742545903514" baseType="Mixer"/>
+							<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1742553072774" baseType="Mixer"/>
 						</ChoosableMixer>
 					</RenderPass>
 				</RenderPass>
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903426" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072686" baseType="RenderPassChain"/>
 						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\AU FIL DE L'EAU.mov" LoadingThread="TTM_MESSAGE"/>
 					</VideoSource>
 				</PrimarySource>
@@ -1011,11 +1010,7 @@
 		</Clip>
 		<Clip name="Clip" uniqueId="1742163267789" layerIndex="1" columnIndex="8"/>
 		<Clip name="Clip" uniqueId="1742288575228" layerIndex="2" columnIndex="8"/>
-		<Clip name="Clip" uniqueId="1742288575928" layerIndex="3" columnIndex="8"/>
-		<Clip name="Clip" uniqueId="1742288575002" layerIndex="0" columnIndex="9"/>
-		<Clip name="Clip" uniqueId="1742163267790" layerIndex="1" columnIndex="9"/>
-		<Clip name="Clip" uniqueId="1742055580714" layerIndex="2" columnIndex="9"/>
-		<Clip name="Clip" uniqueId="1742055580702" layerIndex="3" columnIndex="9">
+		<Clip name="Clip" uniqueId="1742055580702" layerIndex="3" columnIndex="8">
 			<PreloadData>
 				<AudioFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 1_v4_DXV 3 Normal Quality No Alpha.mov"/>
 				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 1_v4_DXV 3 Normal Quality No Alpha.mov"/>
@@ -1030,8 +1025,8 @@
 						<DurationSource name="DurationSource" defaultDuration="20.15501133786847987s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="20155.011337868480041" defaultBeatsDuration="32">
 							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="20.133333333333336412" value="2">
-									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.099337748344370840892"/>
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="20.15501133786847987" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.099230904238802208894"/>
 								</ParamRange>
 								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
 							</Params>
@@ -1068,7 +1063,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903807" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553073103" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288575865" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -1076,73 +1071,16 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903803" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553073115" baseType="RenderPassChain"/>
 						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 1_v4_DXV 3 Normal Quality No Alpha.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1742288575001" layerIndex="0" columnIndex="10">
-			<PreloadData>
-				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Final V2_DXV Normal Quality No Alpha.mov"/>
-			</PreloadData>
-			<Params name="Params">
-				<Param name="Name" T="STRING" default="Final V2_DXV Normal Quality No Alpha" value="Final V2_DXV Normal Quality No Alpha"/>
-				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
-			</Params>
-			<Transport name="Transport">
-				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="6624.5819213250533721">
-						<DurationSource name="DurationSource" defaultDuration="113.11666666666667425s" scale="0.94143584569331029144"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="113116.66666666667152" defaultBeatsDuration="256">
-							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="106.4920847453416286" value="1.9999999999999982236">
-									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.018780738538292967438"/>
-								</ParamRange>
-								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
-							</Params>
-							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="256" detectedTempo="-1" manualTempo="120" detected="0"/>
-						</PhaseSourceTransportTimeline>
-						<ValueRange name="minMax" min="0" max="113116.66666666667152"/>
-						<ValueRange name="startStop" min="6624.5819213250533721" max="113116.66666666667152"/>
-					</ParamRange>
-				</Params>
-			</Transport>
-			<ClipView name="ClipView">
-				<FoldParams name="FoldParams">
-					<FoldState component="/groupedcomponent/renderpasschaincomponent/transform/scale/" folded="0"/>
-				</FoldParams>
-			</ClipView>
-			<VideoTrack name="VideoTrack" manualDuration="0">
-				<Params name="Params">
-					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
-						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
-					</ParamRange>
-					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
-						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.032958984375"/>
-					</ParamRange>
-					<Param name="RScale" T="BOOL" default="1" value="1"/>
-					<Param name="GScale" T="BOOL" default="1" value="1"/>
-					<Param name="BScale" T="BOOL" default="1" value="1"/>
-					<Param name="AScale" T="BOOL" default="1" value="1"/>
-				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545902924" baseType="RenderPassChain">
-					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742374867799" baseType="Effect" index="0">
-						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
-					</RenderPass>
-				</RenderPass>
-				<ChoosableMixer name="Blend"/>
-				<PrimarySource>
-					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903434" baseType="RenderPassChain"/>
-						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Final V2_DXV Normal Quality No Alpha.mov" LoadingThread="TTM_THREADED"/>
-					</VideoSource>
-				</PrimarySource>
-			</VideoTrack>
-		</Clip>
-		<Clip name="Clip" uniqueId="1742288575004" layerIndex="1" columnIndex="10"/>
-		<Clip name="Clip" uniqueId="1742288575230" layerIndex="2" columnIndex="10"/>
-		<Clip name="Clip" uniqueId="1742288576108" layerIndex="3" columnIndex="10">
+		<Clip name="Clip" uniqueId="1742288575002" layerIndex="0" columnIndex="9"/>
+		<Clip name="Clip" uniqueId="1742163267790" layerIndex="1" columnIndex="9"/>
+		<Clip name="Clip" uniqueId="1742055580714" layerIndex="2" columnIndex="9"/>
+		<Clip name="Clip" uniqueId="1742288576108" layerIndex="3" columnIndex="9">
 			<PreloadData>
 				<AudioFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 2_v3_DXV 3 Normal Quality No Alpha.mov"/>
 				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 2_v3_DXV 3 Normal Quality No Alpha.mov"/>
@@ -1195,7 +1133,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545902971" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072208" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288576114" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -1203,16 +1141,74 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903451" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072712" baseType="RenderPassChain"/>
 						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 2_v3_DXV 3 Normal Quality No Alpha.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1742288575344" layerIndex="0" columnIndex="11"/>
-		<Clip name="Clip" uniqueId="1742288575300" layerIndex="1" columnIndex="11"/>
-		<Clip name="Clip" uniqueId="1742288575231" layerIndex="2" columnIndex="11"/>
-		<Clip name="Clip" uniqueId="1742288576120" layerIndex="3" columnIndex="11">
+		<Clip name="Clip" uniqueId="1742288575001" layerIndex="0" columnIndex="10">
+			<PreloadData>
+				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Final V2_DXV Normal Quality No Alpha.mov"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Final V2_DXV Normal Quality No Alpha" value="Final V2_DXV Normal Quality No Alpha"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="6624.5819213250533721">
+						<DurationSource name="DurationSource" defaultDuration="113.11666666666667425s" scale="0.94143584569331029144"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="113116.66666666667152" defaultBeatsDuration="256">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="106.4920847453416286" value="1.9999999999999982236">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.018780738538292967438"/>
+								</ParamRange>
+								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
+							</Params>
+							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="256" detectedTempo="-1" manualTempo="120" detected="0"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="113116.66666666667152"/>
+						<ValueRange name="startStop" min="6624.5819213250533721" max="113116.66666666667152"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams">
+					<FoldState component="/groupedcomponent/renderpasschaincomponent/bright.contrast/" folded="1"/>
+					<FoldState component="/groupedcomponent/renderpasschaincomponent/transform/scale/" folded="0"/>
+				</FoldParams>
+			</ClipView>
+			<VideoTrack name="VideoTrack" manualDuration="0">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.032958984375"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072177" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742374867799" baseType="Effect" index="0">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend"/>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072695" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Final V2_DXV Normal Quality No Alpha.mov" LoadingThread="TTM_THREADED"/>
+					</VideoSource>
+				</PrimarySource>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1742288575004" layerIndex="1" columnIndex="10"/>
+		<Clip name="Clip" uniqueId="1742288575230" layerIndex="2" columnIndex="10"/>
+		<Clip name="Clip" uniqueId="1742288576120" layerIndex="3" columnIndex="10">
 			<PreloadData>
 				<AudioFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 3_v3_DXV 3 Normal Quality No Alpha.mov"/>
 				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 3_v3_DXV 3 Normal Quality No Alpha.mov"/>
@@ -1264,7 +1260,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545902976" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072214" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288576124" baseType="Effect" index="0">
 						<Params name="Params">
 							<ParamRange name="Scale" T="DOUBLE" default="100" value="257.89473684210526017">
@@ -1277,8 +1273,78 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903462" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072727" baseType="RenderPassChain"/>
 						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 3_v3_DXV 3 Normal Quality No Alpha.mov" LoadingThread="TTM_THREADED"/>
+					</VideoSource>
+				</PrimarySource>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1742288575344" layerIndex="0" columnIndex="11"/>
+		<Clip name="Clip" uniqueId="1742288575300" layerIndex="1" columnIndex="11"/>
+		<Clip name="Clip" uniqueId="1742288575231" layerIndex="2" columnIndex="11"/>
+		<Clip name="Clip" uniqueId="1742288576130" layerIndex="3" columnIndex="11">
+			<PreloadData>
+				<AudioFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 4_v3_DXV 3 Normal Quality No Alpha.mov"/>
+				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 4_v3_DXV 3 Normal Quality No Alpha.mov"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Reporter 4_v3_DXV 3 Normal Quality No Alpha" value="Reporter 4_v3_DXV 3 Normal Quality No Alpha"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="21.222993197278913868s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="21222.993197278912703" defaultBeatsDuration="32">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="21.222993197278913868" value="1.999999999999999778">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.09423741417664063813"/>
+								</ParamRange>
+								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
+							</Params>
+							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="32" detectedTempo="-1" manualTempo="120" detected="0"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="21222.993197278912703"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<AudioTrack name="AudioTrack">
+				<Params name="Params">
+					<ParamRange name="Volume" T="DOUBLE" default="0" value="-2.8929823996598619986e-15">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50118723362727224391"/>
+					</ParamRange>
+				</Params>
+				<AudioEffectChain name="AudioEffectChain"/>
+				<PrimarySource>
+					<AudioFileSource FileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 4_v3_DXV 3 Normal Quality No Alpha.mov"/>
+				</PrimarySource>
+			</AudioTrack>
+			<VideoTrack name="VideoTrack" manualDuration="0">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1664" value="1664">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05078125"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.032958984375"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="0" value="0"/>
+				</Params>
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072286" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288576136" baseType="Effect" index="0">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend"/>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="1664" height="1080" type="VideoFormatReaderSource">
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072803" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 4_v3_DXV 3 Normal Quality No Alpha.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
@@ -1320,7 +1386,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903465" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072730" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742459438230" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -1328,7 +1394,7 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource storage="0" name="VideoSource" width="640" height="480" type="NDIVideoSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903476" baseType="RenderPassChain">
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072747" baseType="RenderPassChain">
 							<RenderPass name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742459438224" baseType="Effect" index="0"/>
 							<RenderPass name="FormatConversion" type="FormatConversion" uniqueTypeId="12949899826025724691" uniqueId="1742459438222" baseType="Effect" index="1"/>
 						</RenderPass>
@@ -1383,7 +1449,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545902928" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072176" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742058659391" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -1391,137 +1457,14 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903489" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072760" baseType="RenderPassChain"/>
 						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Intro V1.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
 		<Clip name="Clip" uniqueId="1742288575301" layerIndex="2" columnIndex="12"/>
-		<Clip name="Clip" uniqueId="1742288576130" layerIndex="3" columnIndex="12">
-			<PreloadData>
-				<AudioFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 4_v3_DXV 3 Normal Quality No Alpha.mov"/>
-				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 4_v3_DXV 3 Normal Quality No Alpha.mov"/>
-			</PreloadData>
-			<Params name="Params">
-				<Param name="Name" T="STRING" default="Reporter 4_v3_DXV 3 Normal Quality No Alpha" value="Reporter 4_v3_DXV 3 Normal Quality No Alpha"/>
-				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
-			</Params>
-			<Transport name="Transport">
-				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
-						<DurationSource name="DurationSource" defaultDuration="21.222993197278913868s"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="21222.993197278912703" defaultBeatsDuration="32">
-							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="21.222993197278913868" value="1.999999999999999778">
-									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.09423741417664063813"/>
-								</ParamRange>
-								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
-							</Params>
-							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="32" detectedTempo="-1" manualTempo="120" detected="0"/>
-						</PhaseSourceTransportTimeline>
-						<ValueRange name="minMax" min="0" max="21222.993197278912703"/>
-					</ParamRange>
-				</Params>
-			</Transport>
-			<ClipView name="ClipView">
-				<FoldParams name="FoldParams"/>
-			</ClipView>
-			<AudioTrack name="AudioTrack">
-				<Params name="Params">
-					<ParamRange name="Volume" T="DOUBLE" default="0" value="-2.8929823996598619986e-15">
-						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50118723362727224391"/>
-					</ParamRange>
-				</Params>
-				<AudioEffectChain name="AudioEffectChain"/>
-				<PrimarySource>
-					<AudioFileSource FileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 4_v3_DXV 3 Normal Quality No Alpha.mov"/>
-				</PrimarySource>
-			</AudioTrack>
-			<VideoTrack name="VideoTrack" manualDuration="0">
-				<Params name="Params">
-					<ParamRange name="Width" T="DOUBLE" default="1664" value="1664">
-						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05078125"/>
-					</ParamRange>
-					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
-						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.032958984375"/>
-					</ParamRange>
-					<Param name="RScale" T="BOOL" default="1" value="1"/>
-					<Param name="GScale" T="BOOL" default="1" value="1"/>
-					<Param name="BScale" T="BOOL" default="1" value="1"/>
-					<Param name="AScale" T="BOOL" default="0" value="0"/>
-				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903015" baseType="RenderPassChain">
-					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288576136" baseType="Effect" index="0">
-						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
-					</RenderPass>
-				</RenderPass>
-				<ChoosableMixer name="Blend"/>
-				<PrimarySource>
-					<VideoSource name="VideoSource" width="1664" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903542" baseType="RenderPassChain"/>
-						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 4_v3_DXV 3 Normal Quality No Alpha.mov" LoadingThread="TTM_THREADED"/>
-					</VideoSource>
-				</PrimarySource>
-			</VideoTrack>
-		</Clip>
-		<Clip name="Clip" uniqueId="1742288575316" layerIndex="0" columnIndex="13"/>
-		<Clip name="Clip" uniqueId="1742459437942" layerIndex="1" columnIndex="13">
-			<PreloadData>
-				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Intro Loop V1.mov"/>
-			</PreloadData>
-			<Params name="Params">
-				<Param name="Name" T="STRING" default="Intro Loop V1" value="Intro Loop V1"/>
-				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
-			</Params>
-			<Transport name="Transport">
-				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
-						<DurationSource name="DurationSource" defaultDuration="78.700000000000002842s"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="78700" defaultBeatsDuration="128">
-							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="78.700000000000002842" value="2">
-									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.025412960609911054016"/>
-								</ParamRange>
-							</Params>
-							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="128" detectedTempo="-1" manualTempo="120" detected="0"/>
-						</PhaseSourceTransportTimeline>
-						<ValueRange name="minMax" min="0" max="78700"/>
-					</ParamRange>
-				</Params>
-			</Transport>
-			<ClipView name="ClipView">
-				<FoldParams name="FoldParams"/>
-			</ClipView>
-			<VideoTrack name="VideoTrack" manualDuration="0">
-				<Params name="Params">
-					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
-						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
-					</ParamRange>
-					<ParamRange name="Height" T="DOUBLE" default="1080" value="980">
-						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.0299072265625"/>
-					</ParamRange>
-					<Param name="RScale" T="BOOL" default="1" value="1"/>
-					<Param name="GScale" T="BOOL" default="1" value="1"/>
-					<Param name="BScale" T="BOOL" default="1" value="1"/>
-					<Param name="AScale" T="BOOL" default="0" value="0"/>
-				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545902994" baseType="RenderPassChain">
-					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742459438144" baseType="Effect" index="0">
-						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
-					</RenderPass>
-				</RenderPass>
-				<ChoosableMixer name="Blend"/>
-				<PrimarySource>
-					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903546" baseType="RenderPassChain"/>
-						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Intro Loop V1.mov" LoadingThread="TTM_THREADED"/>
-					</VideoSource>
-				</PrimarySource>
-			</VideoTrack>
-		</Clip>
-		<Clip name="Clip" uniqueId="1742288575348" layerIndex="2" columnIndex="13"/>
-		<Clip name="Clip" uniqueId="1742288576142" layerIndex="3" columnIndex="13">
+		<Clip name="Clip" uniqueId="1742288576142" layerIndex="3" columnIndex="12">
 			<PreloadData>
 				<AudioFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 5_v3_DXV 3 Normal Quality No Alpha.mov"/>
 				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 5_v3_DXV 3 Normal Quality No Alpha.mov"/>
@@ -1575,7 +1518,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903022" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072284" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288576146" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -1583,36 +1526,34 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903563" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072830" baseType="RenderPassChain"/>
 						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 5_v3_DXV 3 Normal Quality No Alpha.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1742288575929" layerIndex="0" columnIndex="14"/>
-		<Clip name="Clip" uniqueId="1742288575058" layerIndex="1" columnIndex="14">
+		<Clip name="Clip" uniqueId="1742288575316" layerIndex="0" columnIndex="13"/>
+		<Clip name="Clip" uniqueId="1742459437942" layerIndex="1" columnIndex="13">
 			<PreloadData>
-				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Intro ShockWave V1.mov"/>
+				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Intro Loop V1.mov"/>
 			</PreloadData>
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Intro ShockWave V1" value="Intro ShockWave V1"/>
+				<Param name="Name" T="STRING" default="Intro Loop V1" value="Intro Loop V1"/>
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="742.08074534161505653">
-						<DurationSource name="DurationSource" defaultDuration="26.550000000000004263s" scale="0.97204968944099379158"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="26550.000000000003638" defaultBeatsDuration="64">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="78.700000000000002842s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="78700" defaultBeatsDuration="128">
 							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="25.807919254658390429" value="1.9999999999999991118">
-									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.077495592738999849458"/>
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="78.700000000000002842" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.025412960609911054016"/>
 								</ParamRange>
-								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
 							</Params>
-							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="64" detectedTempo="-1" manualTempo="120" detected="0"/>
+							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="128" detectedTempo="-1" manualTempo="120" detected="0"/>
 						</PhaseSourceTransportTimeline>
-						<ValueRange name="minMax" min="0" max="26550.000000000003638"/>
-						<ValueRange name="startStop" min="742.08074534161505653" max="26550.000000000003638"/>
+						<ValueRange name="minMax" min="0" max="78700"/>
 					</ParamRange>
 				</Params>
 			</Transport>
@@ -1632,22 +1573,22 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903003" baseType="RenderPassChain">
-					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288575062" baseType="Effect" index="0">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072257" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742459438144" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
 				</RenderPass>
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903567" baseType="RenderPassChain"/>
-						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Intro ShockWave V1.mov" LoadingThread="TTM_THREADED"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072811" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Intro Loop V1.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1742288575394" layerIndex="2" columnIndex="14"/>
-		<Clip name="Clip" uniqueId="1742288576152" layerIndex="3" columnIndex="14">
+		<Clip name="Clip" uniqueId="1742288575348" layerIndex="2" columnIndex="13"/>
+		<Clip name="Clip" uniqueId="1742288576152" layerIndex="3" columnIndex="13">
 			<PreloadData>
 				<AudioFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 6_v3_DXV 3 Normal Quality No Alpha.mov"/>
 				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 6_v3_DXV 3 Normal Quality No Alpha.mov"/>
@@ -1701,7 +1642,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903044" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072322" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288576158" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -1709,16 +1650,71 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903590" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072851" baseType="RenderPassChain"/>
 						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 6_v3_DXV 3 Normal Quality No Alpha.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1742288575390" layerIndex="0" columnIndex="15"/>
-		<Clip name="Clip" uniqueId="1742288575439" layerIndex="1" columnIndex="15"/>
-		<Clip name="Clip" uniqueId="1742288575440" layerIndex="2" columnIndex="15"/>
-		<Clip name="Clip" uniqueId="1742288576164" layerIndex="3" columnIndex="15">
+		<Clip name="Clip" uniqueId="1742288575929" layerIndex="0" columnIndex="14"/>
+		<Clip name="Clip" uniqueId="1742288575058" layerIndex="1" columnIndex="14">
+			<PreloadData>
+				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Intro ShockWave V1.mov"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Intro ShockWave V1" value="Intro ShockWave V1"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="742.08074534161505653">
+						<DurationSource name="DurationSource" defaultDuration="26.550000000000004263s" scale="0.97204968944099379158"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="26550.000000000003638" defaultBeatsDuration="64">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="25.807919254658390429" value="1.9999999999999991118">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.077495592738999849458"/>
+								</ParamRange>
+								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
+							</Params>
+							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="64" detectedTempo="-1" manualTempo="120" detected="0"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="26550.000000000003638"/>
+						<ValueRange name="startStop" min="742.08074534161505653" max="26550.000000000003638"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack" manualDuration="0">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="980">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.0299072265625"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="0" value="0"/>
+				</Params>
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072276" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288575062" baseType="Effect" index="0">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend"/>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072834" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Intro ShockWave V1.mov" LoadingThread="TTM_THREADED"/>
+					</VideoSource>
+				</PrimarySource>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1742288575394" layerIndex="2" columnIndex="14"/>
+		<Clip name="Clip" uniqueId="1742288576164" layerIndex="3" columnIndex="14">
 			<PreloadData>
 				<AudioFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 7_v3_DXV 3 Normal Quality No Alpha.mov"/>
 				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 7_v3_DXV 3 Normal Quality No Alpha.mov"/>
@@ -1771,7 +1767,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903076" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553073233" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288576170" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -1779,16 +1775,16 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903601" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553073245" baseType="RenderPassChain"/>
 						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 7_v3_DXV 3 Normal Quality No Alpha.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1742288575319" layerIndex="0" columnIndex="16"/>
-		<Clip name="Clip" uniqueId="1742288575485" layerIndex="1" columnIndex="16"/>
-		<Clip name="Clip" uniqueId="1742288575486" layerIndex="2" columnIndex="16"/>
-		<Clip name="Clip" uniqueId="1742288576176" layerIndex="3" columnIndex="16">
+		<Clip name="Clip" uniqueId="1742288575390" layerIndex="0" columnIndex="15"/>
+		<Clip name="Clip" uniqueId="1742288575439" layerIndex="1" columnIndex="15"/>
+		<Clip name="Clip" uniqueId="1742288575440" layerIndex="2" columnIndex="15"/>
+		<Clip name="Clip" uniqueId="1742288576176" layerIndex="3" columnIndex="15">
 			<PreloadData>
 				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 8_v4_DXV 3 Normal Quality No Alpha.mov"/>
 			</PreloadData>
@@ -1802,8 +1798,8 @@
 						<DurationSource name="DurationSource" defaultDuration="10.099999999999999645s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="10100" defaultBeatsDuration="16">
 							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="20.108004535147394165" value="2">
-									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.099462877905370422615"/>
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="10.099999999999999645" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.19801980198019802915"/>
 								</ParamRange>
 								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
 							</Params>
@@ -1829,7 +1825,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903848" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072292" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288576182" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -1837,16 +1833,16 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903844" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072872" baseType="RenderPassChain"/>
 						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 8_v4_DXV 3 Normal Quality No Alpha.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1742288575482" layerIndex="0" columnIndex="17"/>
-		<Clip name="Clip" uniqueId="1742288575531" layerIndex="1" columnIndex="17"/>
-		<Clip name="Clip" uniqueId="1742288575532" layerIndex="2" columnIndex="17"/>
-		<Clip name="Clip" uniqueId="1742288576188" layerIndex="3" columnIndex="17">
+		<Clip name="Clip" uniqueId="1742288575319" layerIndex="0" columnIndex="16"/>
+		<Clip name="Clip" uniqueId="1742288575485" layerIndex="1" columnIndex="16"/>
+		<Clip name="Clip" uniqueId="1742288575486" layerIndex="2" columnIndex="16"/>
+		<Clip name="Clip" uniqueId="1742288576188" layerIndex="3" columnIndex="16">
 			<PreloadData>
 				<AudioFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 9_v3_DXV 3 Normal Quality No Alpha.mov"/>
 				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 9_v3_DXV 3 Normal Quality No Alpha.mov"/>
@@ -1899,7 +1895,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903125" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553073168" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288576192" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -1907,16 +1903,16 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903623" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553073180" baseType="RenderPassChain"/>
 						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 9_v3_DXV 3 Normal Quality No Alpha.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1742288575528" layerIndex="0" columnIndex="18"/>
-		<Clip name="Clip" uniqueId="1742288575577" layerIndex="1" columnIndex="18"/>
-		<Clip name="Clip" uniqueId="1742288575578" layerIndex="2" columnIndex="18"/>
-		<Clip name="Clip" uniqueId="1742288576198" layerIndex="3" columnIndex="18">
+		<Clip name="Clip" uniqueId="1742288575482" layerIndex="0" columnIndex="17"/>
+		<Clip name="Clip" uniqueId="1742288575531" layerIndex="1" columnIndex="17"/>
+		<Clip name="Clip" uniqueId="1742288575532" layerIndex="2" columnIndex="17"/>
+		<Clip name="Clip" uniqueId="1742288576198" layerIndex="3" columnIndex="17">
 			<PreloadData>
 				<AudioFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 10_v3_DXV 3 Normal Quality No Alpha.mov"/>
 				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 10_v3_DXV 3 Normal Quality No Alpha.mov"/>
@@ -1969,7 +1965,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903142" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072328" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288576202" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -1977,18 +1973,17 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903634" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072894" baseType="RenderPassChain"/>
 						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 10_v3_DXV 3 Normal Quality No Alpha.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1742288575574" layerIndex="0" columnIndex="19"/>
-		<Clip name="Clip" uniqueId="1742288575623" layerIndex="1" columnIndex="19"/>
-		<Clip name="Clip" uniqueId="1742288575624" layerIndex="2" columnIndex="19"/>
-		<Clip name="Clip" uniqueId="1742288576208" layerIndex="3" columnIndex="19">
+		<Clip name="Clip" uniqueId="1742288575528" layerIndex="0" columnIndex="18"/>
+		<Clip name="Clip" uniqueId="1742288575577" layerIndex="1" columnIndex="18"/>
+		<Clip name="Clip" uniqueId="1742288575578" layerIndex="2" columnIndex="18"/>
+		<Clip name="Clip" uniqueId="1742288576208" layerIndex="3" columnIndex="18">
 			<PreloadData>
-				<AudioFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 11_v3_DXV 3 Normal Quality No Alpha.mov"/>
 				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 11_v3_DXV 3 Normal Quality No Alpha.mov"/>
 			</PreloadData>
 			<Params name="Params">
@@ -1998,34 +1993,23 @@
 			<Transport name="Transport">
 				<Params name="Params">
 					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
-						<DurationSource name="DurationSource" defaultDuration="8.1500000000000003553s"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="8150" defaultBeatsDuration="16">
+						<DurationSource name="DurationSource" defaultDuration="8.133333333333334636s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="8133.3333333333348492" defaultBeatsDuration="16">
 							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="8.1500000000000003553" value="2">
-									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.24539877300613496813"/>
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="8.133333333333334636" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.24590163934426226278"/>
 								</ParamRange>
 								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
 							</Params>
 							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="16" detectedTempo="-1" manualTempo="120" detected="0"/>
 						</PhaseSourceTransportTimeline>
-						<ValueRange name="minMax" min="0" max="8150"/>
+						<ValueRange name="minMax" min="0" max="8133.3333333333339397"/>
 					</ParamRange>
 				</Params>
 			</Transport>
 			<ClipView name="ClipView">
 				<FoldParams name="FoldParams"/>
 			</ClipView>
-			<AudioTrack name="AudioTrack">
-				<Params name="Params">
-					<ParamRange name="Volume" T="DOUBLE" default="0" value="-2.8929823996598619986e-15">
-						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50118723362727224391"/>
-					</ParamRange>
-				</Params>
-				<AudioEffectChain name="AudioEffectChain"/>
-				<PrimarySource>
-					<AudioFileSource FileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 11_v3_DXV 3 Normal Quality No Alpha.mov"/>
-				</PrimarySource>
-			</AudioTrack>
 			<VideoTrack name="VideoTrack" manualDuration="0">
 				<Params name="Params">
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -2039,7 +2023,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903087" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072346" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288576212" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -2047,16 +2031,16 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903645" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072904" baseType="RenderPassChain"/>
 						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 11_v3_DXV 3 Normal Quality No Alpha.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1742288575620" layerIndex="0" columnIndex="20"/>
-		<Clip name="Clip" uniqueId="1742288575669" layerIndex="1" columnIndex="20"/>
-		<Clip name="Clip" uniqueId="1742288575670" layerIndex="2" columnIndex="20"/>
-		<Clip name="Clip" uniqueId="1742288576218" layerIndex="3" columnIndex="20">
+		<Clip name="Clip" uniqueId="1742288575574" layerIndex="0" columnIndex="19"/>
+		<Clip name="Clip" uniqueId="1742288575623" layerIndex="1" columnIndex="19"/>
+		<Clip name="Clip" uniqueId="1742288575624" layerIndex="2" columnIndex="19"/>
+		<Clip name="Clip" uniqueId="1742288576218" layerIndex="3" columnIndex="19">
 			<PreloadData>
 				<AudioFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 12_v3_DXV 3 Normal Quality No Alpha.mov"/>
 				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 12_v3_DXV 3 Normal Quality No Alpha.mov"/>
@@ -2067,18 +2051,19 @@
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
-						<DurationSource name="DurationSource" defaultDuration="19.435011337868481007s"/>
+					<ParamRange name="Position" T="DOUBLE" default="0" value="2960.2997402051328208">
+						<DurationSource name="DurationSource" defaultDuration="19.435011337868481007s" scale="0.84768211920529801251"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="19435.011337868480041" defaultBeatsDuration="32">
 							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="19.435011337868481007" value="1.999999999999999778">
-									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.10290706628521824328"/>
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="16.474711597663347362" value="1.9999999999999984457">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.12139817975834331365"/>
 								</ParamRange>
 								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
 							</Params>
 							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="32" detectedTempo="-1" manualTempo="120" detected="0"/>
 						</PhaseSourceTransportTimeline>
 						<ValueRange name="minMax" min="0" max="19435.011337868480041"/>
+						<ValueRange name="startStop" min="2960.2997402051328208" max="19435.011337868480041"/>
 					</ParamRange>
 				</Params>
 			</Transport>
@@ -2109,7 +2094,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903083" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072383" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288576224" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -2117,18 +2102,17 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903656" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072915" baseType="RenderPassChain"/>
 						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 12_v3_DXV 3 Normal Quality No Alpha.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1742288575666" layerIndex="0" columnIndex="21"/>
-		<Clip name="Clip" uniqueId="1742288575715" layerIndex="1" columnIndex="21"/>
-		<Clip name="Clip" uniqueId="1742288575716" layerIndex="2" columnIndex="21"/>
-		<Clip name="Clip" uniqueId="1742288576230" layerIndex="3" columnIndex="21">
+		<Clip name="Clip" uniqueId="1742288575620" layerIndex="0" columnIndex="20"/>
+		<Clip name="Clip" uniqueId="1742288575669" layerIndex="1" columnIndex="20"/>
+		<Clip name="Clip" uniqueId="1742288575670" layerIndex="2" columnIndex="20"/>
+		<Clip name="Clip" uniqueId="1742288576230" layerIndex="3" columnIndex="20">
 			<PreloadData>
-				<AudioFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 13_v3_DXV 3 Normal Quality No Alpha.mov"/>
 				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 13_v3_DXV 3 Normal Quality No Alpha.mov"/>
 			</PreloadData>
 			<Params name="Params">
@@ -2138,34 +2122,23 @@
 			<Transport name="Transport">
 				<Params name="Params">
 					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
-						<DurationSource name="DurationSource" defaultDuration="9.8219954648526073271s"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="9821.995464852607256" defaultBeatsDuration="16">
+						<DurationSource name="DurationSource" defaultDuration="9.8000000000000007105s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="9800" defaultBeatsDuration="16">
 							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="9.8219954648526073271" value="2">
-									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.20362461041209742318"/>
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="9.8000000000000007105" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.20408163265306120127"/>
 								</ParamRange>
 								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
 							</Params>
 							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="16" detectedTempo="-1" manualTempo="120" detected="0"/>
 						</PhaseSourceTransportTimeline>
-						<ValueRange name="minMax" min="0" max="9821.995464852607256"/>
+						<ValueRange name="minMax" min="0" max="9800"/>
 					</ParamRange>
 				</Params>
 			</Transport>
 			<ClipView name="ClipView">
 				<FoldParams name="FoldParams"/>
 			</ClipView>
-			<AudioTrack name="AudioTrack">
-				<Params name="Params">
-					<ParamRange name="Volume" T="DOUBLE" default="0" value="-2.8929823996598619986e-15">
-						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50118723362727224391"/>
-					</ParamRange>
-				</Params>
-				<AudioEffectChain name="AudioEffectChain"/>
-				<PrimarySource>
-					<AudioFileSource FileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 13_v3_DXV 3 Normal Quality No Alpha.mov"/>
-				</PrimarySource>
-			</AudioTrack>
 			<VideoTrack name="VideoTrack" manualDuration="0">
 				<Params name="Params">
 					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -2179,7 +2152,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903117" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072373" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288576234" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -2187,21 +2160,21 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903667" baseType="RenderPassChain"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072925" baseType="RenderPassChain"/>
 						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Zapping\Reporter 13_v3_DXV 3 Normal Quality No Alpha.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
+		<Clip name="Clip" uniqueId="1742288575666" layerIndex="0" columnIndex="21"/>
+		<Clip name="Clip" uniqueId="1742288575715" layerIndex="1" columnIndex="21"/>
+		<Clip name="Clip" uniqueId="1742288575716" layerIndex="2" columnIndex="21"/>
+		<Clip name="Clip" uniqueId="1742288575928" layerIndex="3" columnIndex="21"/>
 		<Clip name="Clip" uniqueId="1742288575712" layerIndex="0" columnIndex="22"/>
 		<Clip name="Clip" uniqueId="1742288575761" layerIndex="1" columnIndex="22"/>
 		<Clip name="Clip" uniqueId="1742288575762" layerIndex="2" columnIndex="22"/>
 		<Clip name="Clip" uniqueId="1742288575942" layerIndex="3" columnIndex="22"/>
-		<Clip name="Clip" uniqueId="1742288575758" layerIndex="0" columnIndex="23"/>
-		<Clip name="Clip" uniqueId="1742288576384" layerIndex="1" columnIndex="23"/>
-		<Clip name="Clip" uniqueId="1742288576385" layerIndex="2" columnIndex="23"/>
-		<Clip name="Clip" uniqueId="1742288576386" layerIndex="3" columnIndex="23"/>
-		<Clip name="Clip" uniqueId="1742288576383" layerIndex="0" columnIndex="24">
+		<Clip name="Clip" uniqueId="1742288576383" layerIndex="0" columnIndex="23">
 			<PreloadData>
 				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov"/>
 			</PreloadData>
@@ -2211,19 +2184,20 @@
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="41.465838509316768068">
-						<DurationSource name="DurationSource" defaultDuration="13.352000000000000313s" scale="0.077639751552795024936"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="13352" defaultBeatsDuration="32">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="533.33333333333337123">
+						<DurationSource name="DurationSource" defaultDuration="13.333333333333333925s" scale="0.03777777777777777124"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.4117647058823529771" defaultMillisecondsDuration="13333.33333333333394" defaultBeatsDuration="32">
 							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1.0366459627329192017" value="0.12439751552795028089">
-									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.11999999999999998168"/>
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="0.50370370370370365354" value="2.9605947323337501171e-15">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="5.8776513068390636663e-15"/>
 								</ParamRange>
+								<ParamChoice name="PlayDirection" T="INT32" default="2" value="1" storeChoices="0"/>
 								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
 							</Params>
 							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="32" detectedTempo="-1" manualTempo="120" detected="0"/>
 						</PhaseSourceTransportTimeline>
-						<ValueRange name="minMax" min="0" max="13352"/>
-						<ValueRange name="startStop" min="41.465838509316768068" max="1078.1118012422359698"/>
+						<ValueRange name="minMax" min="0" max="13333.33333333333394"/>
+						<ValueRange name="startStop" min="325.92592592592598066" max="829.62962962962967595"/>
 					</ParamRange>
 				</Params>
 			</Transport>
@@ -2243,7 +2217,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903090" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072397" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288576440" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -2251,16 +2225,16 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903677" baseType="RenderPassChain"/>
-						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov" LoadingThread="TTM_MESSAGE"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072935" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1742288576413" layerIndex="1" columnIndex="24"/>
-		<Clip name="Clip" uniqueId="1742288576414" layerIndex="2" columnIndex="24"/>
-		<Clip name="Clip" uniqueId="1742288576415" layerIndex="3" columnIndex="24"/>
-		<Clip name="Clip" uniqueId="1742288576486" layerIndex="0" columnIndex="25">
+		<Clip name="Clip" uniqueId="1742288576384" layerIndex="1" columnIndex="23"/>
+		<Clip name="Clip" uniqueId="1742288576385" layerIndex="2" columnIndex="23"/>
+		<Clip name="Clip" uniqueId="1742288576386" layerIndex="3" columnIndex="23"/>
+		<Clip name="Clip" uniqueId="1742288576486" layerIndex="0" columnIndex="24">
 			<PreloadData>
 				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov"/>
 			</PreloadData>
@@ -2270,19 +2244,20 @@
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="995.18012422360254732">
-						<DurationSource name="DurationSource" defaultDuration="13.352000000000000313s" scale="0.090062111801242239473"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="13352" defaultBeatsDuration="32">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="1422.2222222222223991">
+						<DurationSource name="DurationSource" defaultDuration="13.333333333333333925s" scale="0.04888888888888888451"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.27272727272727281811" defaultMillisecondsDuration="13333.33333333333394" defaultBeatsDuration="32">
 							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1.2025093167701863539" value="1.2025093167701863539">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="0.65185185185185179346" value="0.65185185185185179346">
 									<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
 								</ParamRange>
+								<ParamChoice name="PlayDirection" T="INT32" default="2" value="1" storeChoices="0"/>
 								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
 							</Params>
 							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="32" detectedTempo="-1" manualTempo="120" detected="0"/>
 						</PhaseSourceTransportTimeline>
-						<ValueRange name="minMax" min="0" max="13352"/>
-						<ValueRange name="startStop" min="995.18012422360254732" max="2197.6894409937890487"/>
+						<ValueRange name="minMax" min="0" max="13333.33333333333394"/>
+						<ValueRange name="startStop" min="1244.4444444444445708" max="1896.2962962962963047"/>
 					</ParamRange>
 				</Params>
 			</Transport>
@@ -2302,7 +2277,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903101" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072393" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288576490" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -2310,16 +2285,16 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903681" baseType="RenderPassChain"/>
-						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov" LoadingThread="TTM_MESSAGE"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072945" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1742288576460" layerIndex="1" columnIndex="25"/>
-		<Clip name="Clip" uniqueId="1742288576461" layerIndex="2" columnIndex="25"/>
-		<Clip name="Clip" uniqueId="1742288576462" layerIndex="3" columnIndex="25"/>
-		<Clip name="Clip" uniqueId="1742288576528" layerIndex="0" columnIndex="26">
+		<Clip name="Clip" uniqueId="1742288576413" layerIndex="1" columnIndex="24"/>
+		<Clip name="Clip" uniqueId="1742288576414" layerIndex="2" columnIndex="24"/>
+		<Clip name="Clip" uniqueId="1742288576415" layerIndex="3" columnIndex="24"/>
+		<Clip name="Clip" uniqueId="1742288576528" layerIndex="0" columnIndex="25">
 			<PreloadData>
 				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov"/>
 			</PreloadData>
@@ -2329,19 +2304,20 @@
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="2239.155279503105703">
-						<DurationSource name="DurationSource" defaultDuration="13.352000000000000313s" scale="0.080745341614906818162"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="13352" defaultBeatsDuration="32">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="2696.2962962962965321">
+						<DurationSource name="DurationSource" defaultDuration="13.333333333333333925s" scale="0.042222222222222216548"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.36842105263157876038" defaultMillisecondsDuration="13333.33333333333394" defaultBeatsDuration="32">
 							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1.0781118012422359342" value="0.53905590062111796712">
-									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="0.5629629629629628873" value="0.50370370370370365354">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.89473684210526316374"/>
 								</ParamRange>
+								<ParamChoice name="PlayDirection" T="INT32" default="2" value="1" storeChoices="0"/>
 								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
 							</Params>
 							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="32" detectedTempo="-1" manualTempo="120" detected="0"/>
 						</PhaseSourceTransportTimeline>
-						<ValueRange name="minMax" min="0" max="13352"/>
-						<ValueRange name="startStop" min="2239.155279503105703" max="3317.2670807453414454"/>
+						<ValueRange name="minMax" min="0" max="13333.33333333333394"/>
+						<ValueRange name="startStop" min="2488.8888888888891415" max="3051.8518518518521887"/>
 					</ParamRange>
 				</Params>
 			</Transport>
@@ -2361,7 +2337,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903105" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072404" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288576532" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -2369,16 +2345,16 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903685" baseType="RenderPassChain"/>
-						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov" LoadingThread="TTM_MESSAGE"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072955" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1742288576472" layerIndex="1" columnIndex="26"/>
-		<Clip name="Clip" uniqueId="1742288576473" layerIndex="2" columnIndex="26"/>
-		<Clip name="Clip" uniqueId="1742288576474" layerIndex="3" columnIndex="26"/>
-		<Clip name="Clip" uniqueId="1742288576570" layerIndex="0" columnIndex="27">
+		<Clip name="Clip" uniqueId="1742288576460" layerIndex="1" columnIndex="25"/>
+		<Clip name="Clip" uniqueId="1742288576461" layerIndex="2" columnIndex="25"/>
+		<Clip name="Clip" uniqueId="1742288576462" layerIndex="3" columnIndex="25"/>
+		<Clip name="Clip" uniqueId="1742288576570" layerIndex="0" columnIndex="26">
 			<PreloadData>
 				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov"/>
 			</PreloadData>
@@ -2388,19 +2364,20 @@
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="3275.8012422360247911">
-						<DurationSource name="DurationSource" defaultDuration="13.352000000000000313s" scale="0.083850931677018653021"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="13352" defaultBeatsDuration="32">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="3851.851851851851734">
+						<DurationSource name="DurationSource" defaultDuration="13.333333333333333925s" scale="0.035555555555555562464"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.31249999999999883427" defaultMillisecondsDuration="13333.33333333333394" defaultBeatsDuration="32">
 							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1.1195776397515531109" value="1.1195776397515531109">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="0.47407407407407420319" value="0.47407407407407420319">
 									<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
 								</ParamRange>
+								<ParamChoice name="PlayDirection" T="INT32" default="2" value="1" storeChoices="0"/>
 								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
 							</Params>
 							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="32" detectedTempo="-1" manualTempo="120" detected="0"/>
 						</PhaseSourceTransportTimeline>
-						<ValueRange name="minMax" min="0" max="13352"/>
-						<ValueRange name="startStop" min="3275.8012422360247911" max="4395.3788819875780973"/>
+						<ValueRange name="minMax" min="0" max="13333.33333333333394"/>
+						<ValueRange name="startStop" min="3703.7037037037039227" max="4177.7777777777782831"/>
 					</ParamRange>
 				</Params>
 			</Transport>
@@ -2420,7 +2397,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903133" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072406" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288576574" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -2428,16 +2405,16 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903689" baseType="RenderPassChain"/>
-						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov" LoadingThread="TTM_MESSAGE"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072965" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1742288576514" layerIndex="1" columnIndex="27"/>
-		<Clip name="Clip" uniqueId="1742288576515" layerIndex="2" columnIndex="27"/>
-		<Clip name="Clip" uniqueId="1742288576516" layerIndex="3" columnIndex="27"/>
-		<Clip name="Clip" uniqueId="1742288576612" layerIndex="0" columnIndex="28">
+		<Clip name="Clip" uniqueId="1742288576472" layerIndex="1" columnIndex="26"/>
+		<Clip name="Clip" uniqueId="1742288576473" layerIndex="2" columnIndex="26"/>
+		<Clip name="Clip" uniqueId="1742288576474" layerIndex="3" columnIndex="26"/>
+		<Clip name="Clip" uniqueId="1742288576612" layerIndex="0" columnIndex="27">
 			<PreloadData>
 				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov"/>
 			</PreloadData>
@@ -2447,19 +2424,20 @@
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="4436.844720496894297">
-						<DurationSource name="DurationSource" defaultDuration="13.352000000000000313s" scale="0.086956521739130432369"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="13352" defaultBeatsDuration="32">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="5066.6666666666669698">
+						<DurationSource name="DurationSource" defaultDuration="13.333333333333333925s" scale="0.0466666666666666341"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.52380952380952394698" defaultMillisecondsDuration="13333.33333333333394" defaultBeatsDuration="32">
 							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1.1610434782608696214" value="1.1610434782608696214">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="0.622222222222221788" value="0.622222222222221788">
 									<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
 								</ParamRange>
+								<ParamChoice name="PlayDirection" T="INT32" default="2" value="1" storeChoices="0"/>
 								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
 							</Params>
 							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="32" detectedTempo="-1" manualTempo="120" detected="0"/>
 						</PhaseSourceTransportTimeline>
-						<ValueRange name="minMax" min="0" max="13352"/>
-						<ValueRange name="startStop" min="4436.844720496894297" max="5597.8881987577642576"/>
+						<ValueRange name="minMax" min="0" max="13333.33333333333394"/>
+						<ValueRange name="startStop" min="4740.7407407407408755" max="5362.9629629629625924"/>
 					</ParamRange>
 				</Params>
 			</Transport>
@@ -2479,7 +2457,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903138" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072409" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288576616" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -2487,16 +2465,16 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903693" baseType="RenderPassChain"/>
-						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov" LoadingThread="TTM_MESSAGE"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072975" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1742288576556" layerIndex="1" columnIndex="28"/>
-		<Clip name="Clip" uniqueId="1742288576557" layerIndex="2" columnIndex="28"/>
-		<Clip name="Clip" uniqueId="1742288576558" layerIndex="3" columnIndex="28"/>
-		<Clip name="Clip" uniqueId="1742288576654" layerIndex="0" columnIndex="29">
+		<Clip name="Clip" uniqueId="1742288576514" layerIndex="1" columnIndex="27"/>
+		<Clip name="Clip" uniqueId="1742288576515" layerIndex="2" columnIndex="27"/>
+		<Clip name="Clip" uniqueId="1742288576516" layerIndex="3" columnIndex="27"/>
+		<Clip name="Clip" uniqueId="1742288576654" layerIndex="0" columnIndex="28">
 			<PreloadData>
 				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov"/>
 			</PreloadData>
@@ -2506,19 +2484,20 @@
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="5597.8881987577642576">
-						<DurationSource name="DurationSource" defaultDuration="13.352000000000000313s" scale="0.083850931677018569754"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="13352" defaultBeatsDuration="32">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="6103.7037037037043774">
+						<DurationSource name="DurationSource" defaultDuration="13.333333333333333925s" scale="0.077777777777777779011"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.39999999999999968914" defaultMillisecondsDuration="13333.33333333333394" defaultBeatsDuration="32">
 							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1.1195776397515520006" value="1.1195776397515520006">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1.0370370370370372015" value="1.0370370370370372015">
 									<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
 								</ParamRange>
+								<ParamChoice name="PlayDirection" T="INT32" default="2" value="1" storeChoices="0"/>
 								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
 							</Params>
 							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="32" detectedTempo="-1" manualTempo="120" detected="0"/>
 						</PhaseSourceTransportTimeline>
-						<ValueRange name="minMax" min="0" max="13352"/>
-						<ValueRange name="startStop" min="5597.8881987577642576" max="6717.4658385093161996"/>
+						<ValueRange name="minMax" min="0" max="13333.33333333333394"/>
+						<ValueRange name="startStop" min="5688.8888888888895963" max="6725.9259259259270038"/>
 					</ParamRange>
 				</Params>
 			</Transport>
@@ -2538,7 +2517,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903171" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072417" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288576658" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -2546,16 +2525,16 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903697" baseType="RenderPassChain"/>
-						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov" LoadingThread="TTM_MESSAGE"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072985" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1742288576598" layerIndex="1" columnIndex="29"/>
-		<Clip name="Clip" uniqueId="1742288576599" layerIndex="2" columnIndex="29"/>
-		<Clip name="Clip" uniqueId="1742288576600" layerIndex="3" columnIndex="29"/>
-		<Clip name="Clip" uniqueId="1742288576696" layerIndex="0" columnIndex="30">
+		<Clip name="Clip" uniqueId="1742288576556" layerIndex="1" columnIndex="28"/>
+		<Clip name="Clip" uniqueId="1742288576557" layerIndex="2" columnIndex="28"/>
+		<Clip name="Clip" uniqueId="1742288576558" layerIndex="3" columnIndex="28"/>
+		<Clip name="Clip" uniqueId="1742288576696" layerIndex="0" columnIndex="29">
 			<PreloadData>
 				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov"/>
 			</PreloadData>
@@ -2565,19 +2544,20 @@
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="6634.5341614906828909">
-						<DurationSource name="DurationSource" defaultDuration="13.352000000000000313s" scale="0.093167701863354046576"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="13352" defaultBeatsDuration="32">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="7318.518518518518249">
+						<DurationSource name="DurationSource" defaultDuration="13.333333333333333925s" scale="0.086666666666666669627"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.46153846153846195266" defaultMillisecondsDuration="13333.33333333333394" defaultBeatsDuration="32">
 							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1.2439751552795033085" value="1.2439751552795033085">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1.155555555555555669" value="1.155555555555555669">
 									<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
 								</ParamRange>
+								<ParamChoice name="PlayDirection" T="INT32" default="2" value="1" storeChoices="0"/>
 								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
 							</Params>
 							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="32" detectedTempo="-1" manualTempo="120" detected="0"/>
 						</PhaseSourceTransportTimeline>
-						<ValueRange name="minMax" min="0" max="13352"/>
-						<ValueRange name="startStop" min="6634.5341614906828909" max="7878.5093167701861603"/>
+						<ValueRange name="minMax" min="0" max="13333.33333333333394"/>
+						<ValueRange name="startStop" min="6785.1851851851852189" max="7940.7407407407408755"/>
 					</ParamRange>
 				</Params>
 			</Transport>
@@ -2597,7 +2577,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903168" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072420" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288576700" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -2605,19 +2585,19 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903701" baseType="RenderPassChain"/>
-						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov" LoadingThread="TTM_MESSAGE"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072995" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1742288576640" layerIndex="1" columnIndex="30"/>
-		<Clip name="Clip" uniqueId="1742288576641" layerIndex="2" columnIndex="30"/>
-		<Clip name="Clip" uniqueId="1742288576642" layerIndex="3" columnIndex="30"/>
-		<Clip name="Clip" uniqueId="1742288576554" layerIndex="0" columnIndex="31">
+		<Clip name="Clip" uniqueId="1742288576598" layerIndex="1" columnIndex="29"/>
+		<Clip name="Clip" uniqueId="1742288576599" layerIndex="2" columnIndex="29"/>
+		<Clip name="Clip" uniqueId="1742288576600" layerIndex="3" columnIndex="29"/>
+		<Clip name="Clip" uniqueId="1742288576554" layerIndex="0" columnIndex="30">
 			<PreloadData>
-				<AudioFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo_DXV 3 Normal Quality No Alpha.mov"/>
-				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo_DXV 3 Normal Quality No Alpha.mov"/>
+				<AudioFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov"/>
+				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov"/>
 			</PreloadData>
 			<Params name="Params">
 				<Param name="Name" T="STRING" default="Typo_DXV 3 Normal Quality No Alpha" value="Canicules"/>
@@ -2625,13 +2605,14 @@
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="7836.4551907719614974">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="8544.6385487528350495">
 						<DurationSource name="DurationSource" defaultDuration="13.350997732426304054s" scale="0.096273291925465631635"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="13350.997732426303628" defaultBeatsDuration="32">
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.55096774193548458953" defaultMillisecondsDuration="13350.997732426303628" defaultBeatsDuration="32">
 							<Params name="Params">
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1.2853445021901073186" value="0.41462725877100253813">
 									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.32258064516129048016"/>
 								</ParamRange>
+								<ParamChoice name="PlayDirection" T="INT32" default="2" value="1" storeChoices="0"/>
 								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
 							</Params>
 							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="32" detectedTempo="-1" manualTempo="120" detected="0"/>
@@ -2652,7 +2633,7 @@
 				</Params>
 				<AudioEffectChain name="AudioEffectChain"/>
 				<PrimarySource>
-					<AudioFileSource FileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo_DXV 3 Normal Quality No Alpha.mov"/>
+					<AudioFileSource FileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov"/>
 				</PrimarySource>
 			</AudioTrack>
 			<VideoTrack name="VideoTrack" manualDuration="0">
@@ -2668,7 +2649,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903204" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072480" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288576907" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -2676,19 +2657,19 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903748" baseType="RenderPassChain"/>
-						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo_DXV 3 Normal Quality No Alpha.mov" LoadingThread="TTM_THREADED"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553073006" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1742288576682" layerIndex="1" columnIndex="31"/>
-		<Clip name="Clip" uniqueId="1742288576683" layerIndex="2" columnIndex="31"/>
-		<Clip name="Clip" uniqueId="1742288576684" layerIndex="3" columnIndex="31"/>
-		<Clip name="Clip" uniqueId="1742288576780" layerIndex="0" columnIndex="32">
+		<Clip name="Clip" uniqueId="1742288576640" layerIndex="1" columnIndex="30"/>
+		<Clip name="Clip" uniqueId="1742288576641" layerIndex="2" columnIndex="30"/>
+		<Clip name="Clip" uniqueId="1742288576642" layerIndex="3" columnIndex="30"/>
+		<Clip name="Clip" uniqueId="1742288576780" layerIndex="0" columnIndex="31">
 			<PreloadData>
-				<AudioFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo_DXV 3 Normal Quality No Alpha.mov"/>
-				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo_DXV 3 Normal Quality No Alpha.mov"/>
+				<AudioFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov"/>
+				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov"/>
 			</PreloadData>
 			<Params name="Params">
 				<Param name="Name" T="STRING" default="Typo" value="Incendies"/>
@@ -2696,19 +2677,19 @@
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="9453.5014999788727437">
-						<DurationSource name="DurationSource" defaultDuration="13.350997732426304054s" scale="0.10559006211180121948"/>
+					<ParamRange name="Position" T="DOUBLE" default="0" value="9790.7316704459553875">
+						<DurationSource name="DurationSource" defaultDuration="13.350997732426304054s" scale="0.080331262939958625324"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="13350.997732426303628" defaultBeatsDuration="32">
 							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1.4097326798214107058" value="1.1609563245588083724">
-									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.82352941176470562112"/>
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1.0725025093543287813" value="1.0725025093543287813">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
 								</ParamRange>
 								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
 							</Params>
 							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="32" detectedTempo="-1" manualTempo="120" detected="0"/>
 						</PhaseSourceTransportTimeline>
 						<ValueRange name="minMax" min="0" max="13350.997732426303628"/>
-						<ValueRange name="startStop" min="9453.5014999788727437" max="10863.234179800283528"/>
+						<ValueRange name="startStop" min="9790.7316704459553875" max="10863.234179800283528"/>
 					</ParamRange>
 				</Params>
 			</Transport>
@@ -2723,7 +2704,7 @@
 				</Params>
 				<AudioEffectChain name="AudioEffectChain"/>
 				<PrimarySource>
-					<AudioFileSource FileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo_DXV 3 Normal Quality No Alpha.mov"/>
+					<AudioFileSource FileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov"/>
 				</PrimarySource>
 			</AudioTrack>
 			<VideoTrack name="VideoTrack" manualDuration="0">
@@ -2739,7 +2720,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903201" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072477" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288576784" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -2747,16 +2728,16 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903759" baseType="RenderPassChain"/>
-						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo_DXV 3 Normal Quality No Alpha.mov" LoadingThread="TTM_THREADED"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553073017" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1742288576724" layerIndex="1" columnIndex="32"/>
-		<Clip name="Clip" uniqueId="1742288576725" layerIndex="2" columnIndex="32"/>
-		<Clip name="Clip" uniqueId="1742288576726" layerIndex="3" columnIndex="32"/>
-		<Clip name="Clip" uniqueId="1742288576822" layerIndex="0" columnIndex="33">
+		<Clip name="Clip" uniqueId="1742288576682" layerIndex="1" columnIndex="31"/>
+		<Clip name="Clip" uniqueId="1742288576683" layerIndex="2" columnIndex="31"/>
+		<Clip name="Clip" uniqueId="1742288576684" layerIndex="3" columnIndex="31"/>
+		<Clip name="Clip" uniqueId="1742288576822" layerIndex="0" columnIndex="32">
 			<PreloadData>
 				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov"/>
 			</PreloadData>
@@ -2766,19 +2747,19 @@
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="10946.981366459627679">
-						<DurationSource name="DurationSource" defaultDuration="13.352000000000000313s" scale="0.10248447204968946789"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="13352" defaultBeatsDuration="32">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="11170.370370370370438">
+						<DurationSource name="DurationSource" defaultDuration="13.333333333333333925s" scale="0.077777777777777834523"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="13333.33333333333394" defaultBeatsDuration="32">
 							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1.3683726708074537282" value="2.964739564959018095e-15">
-									<PhaseSourceStatic name="PhaseSourceStatic" phase="2.1666170541169718111e-15"/>
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1.0370370370370378676" value="2.964739564959020856e-15">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="2.8588560090676247888e-15"/>
 								</ParamRange>
 								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
 							</Params>
 							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="32" detectedTempo="-1" manualTempo="120" detected="0"/>
 						</PhaseSourceTransportTimeline>
-						<ValueRange name="minMax" min="0" max="13352"/>
-						<ValueRange name="startStop" min="10946.981366459627679" max="12315.354037267081367"/>
+						<ValueRange name="minMax" min="0" max="13333.33333333333394"/>
+						<ValueRange name="startStop" min="11170.370370370370438" max="12207.407407407408755"/>
 					</ParamRange>
 				</Params>
 			</Transport>
@@ -2798,7 +2779,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903207" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072461" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288576826" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -2806,16 +2787,16 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903763" baseType="RenderPassChain"/>
-						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov" LoadingThread="TTM_MESSAGE"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553073027" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1742288576766" layerIndex="1" columnIndex="33"/>
-		<Clip name="Clip" uniqueId="1742288576767" layerIndex="2" columnIndex="33"/>
-		<Clip name="Clip" uniqueId="1742288576768" layerIndex="3" columnIndex="33"/>
-		<Clip name="Clip" uniqueId="1742288576864" layerIndex="0" columnIndex="34">
+		<Clip name="Clip" uniqueId="1742288576724" layerIndex="1" columnIndex="32"/>
+		<Clip name="Clip" uniqueId="1742288576725" layerIndex="2" columnIndex="32"/>
+		<Clip name="Clip" uniqueId="1742288576726" layerIndex="3" columnIndex="32"/>
+		<Clip name="Clip" uniqueId="1742288576864" layerIndex="0" columnIndex="33">
 			<PreloadData>
 				<VideoFile value="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov"/>
 			</PreloadData>
@@ -2825,19 +2806,19 @@
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="12232.422360248447148">
-						<DurationSource name="DurationSource" defaultDuration="13.352000000000000313s" scale="0.083850931677018625265"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="13352" defaultBeatsDuration="32">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="12325.925925925925185">
+						<DurationSource name="DurationSource" defaultDuration="13.333333333333333925s" scale="0.075555555555555597991"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="13333.33333333333394" defaultBeatsDuration="32">
 							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1.1195776397515526668" value="1.1195776397515526668">
-									<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1.0074074074074079732" value="0.80000000000000071054">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.79411764705882381676"/>
 								</ParamRange>
 								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
 							</Params>
 							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="32" detectedTempo="-1" manualTempo="120" detected="0"/>
 						</PhaseSourceTransportTimeline>
-						<ValueRange name="minMax" min="0" max="13352"/>
-						<ValueRange name="startStop" min="12232.422360248447148" max="13352"/>
+						<ValueRange name="minMax" min="0" max="13333.33333333333394"/>
+						<ValueRange name="startStop" min="12325.925925925925185" max="13333.33333333333394"/>
 					</ParamRange>
 				</Params>
 			</Transport>
@@ -2857,7 +2838,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
-				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903223" baseType="RenderPassChain">
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553072473" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1742288576868" baseType="Effect" index="0">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -2865,12 +2846,16 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
-						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742545903773" baseType="RenderPassChain"/>
-						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov" LoadingThread="TTM_MESSAGE"/>
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1742553073037" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="D:\Documents\Projets\De leau et des hommes\Media\Videos\Typo\Typo.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
 			</VideoTrack>
 		</Clip>
+		<Clip name="Clip" uniqueId="1742288576766" layerIndex="1" columnIndex="33"/>
+		<Clip name="Clip" uniqueId="1742288576767" layerIndex="2" columnIndex="33"/>
+		<Clip name="Clip" uniqueId="1742288576768" layerIndex="3" columnIndex="33"/>
+		<Clip name="Clip" uniqueId="1742288575758" layerIndex="0" columnIndex="34"/>
 		<Clip name="Clip" uniqueId="1742288576808" layerIndex="1" columnIndex="34"/>
 		<Clip name="Clip" uniqueId="1742288576809" layerIndex="2" columnIndex="34"/>
 		<Clip name="Clip" uniqueId="1742288576810" layerIndex="3" columnIndex="34"/>
